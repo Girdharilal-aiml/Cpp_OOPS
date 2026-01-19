@@ -41,8 +41,10 @@ int main(){
     c1.name = "Ismail";
     c1.print();
     c2.print();
-adssfaa
+
     cout<<c1.matches()<<endl;
 
     return 0;
 }
+
+// solve some questions
