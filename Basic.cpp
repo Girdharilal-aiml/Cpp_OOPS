@@ -30,13 +30,13 @@ void change(Student &s){           // pass by reference
 }
 
 int main(){
-    // Student s1;          //s is now an obejct which contains multiple things
-    // s1.sname="Girdhari lal";
-    // s1.cgpa= 1.333;
-    // s1.rno= 250005;
-    // print(s1);
-    // change(s1);
-    // print(s1);
+    Student s1;          //s is now an obejct which contains multiple things
+    s1.sname="Girdhari lal";
+    s1.cgpa= 1.333;
+    s1.rno= 250005;
+    print(s1);
+    change(s1);
+    print(s1);
 
     Student s1("Girdhari lal", 250005, 4.00);               // Done by help of the constructor
     print(s1);
