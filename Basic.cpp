@@ -38,14 +38,14 @@ int main(){
     change(s1);
     print(s1);
 
-    Student s1("Girdhari lal", 250005, 4.00);               // Done by help of the constructor
-    print(s1);
-
-    Student s2=s1;                                          //Deep Copy from other class
+    Student s2("Girdhari lal", 250005, 4.00);               // Done by help of the constructor
     print(s2);
 
-    Student s3(s1);                                         // Copy Constructor
+    Student s3=s2;                                          //Deep Copy from other class
     print(s3);
+
+    Student s4(s1);                                         // Copy Constructor
+    print(s4);
 
     return 0;
 }
