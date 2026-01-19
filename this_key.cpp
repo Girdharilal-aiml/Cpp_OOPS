@@ -48,4 +48,4 @@ int main(){
 }
 
 // solve some questions
-public on github
+public on 
