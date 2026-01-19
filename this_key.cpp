@@ -48,3 +48,5 @@ int main(){
 }
 
 // solve some questions
+public on github
+try leetcode
