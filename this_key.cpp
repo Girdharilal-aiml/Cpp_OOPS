@@ -47,5 +47,5 @@ int main(){
     return 0;
 }
 
-// solve some questions
+// solve some 
 
