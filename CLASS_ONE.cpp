@@ -19,8 +19,19 @@ public:
         balance = B;
     }
 
+    void getdetails(){
+        cout<<endl<<"-----------------------------------------------------------"<<endl;
+        cout << "Name is: "<< name << endl;
+        cout << "Account Number: "<< account_number << endl;
+        cout << "Balance is: "<< balance << endl;
+        cout<<endl<<"-----------------------------------------------------------"<<endl;
+    }
+
+    
+
 };
 
 int main(){
     Bankaccount Girdhari("Girdhari lal", 1012021, 1200.00 );
+    Girdhari.getdetails();
 }
