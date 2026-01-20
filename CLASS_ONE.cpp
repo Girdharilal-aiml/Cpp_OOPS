@@ -20,7 +20,6 @@ public:
     }
 
     void getdetails(){
-        cout<<endl<<"-----------------------------------------------------------"<<endl;
         cout << "Name is: "<< name << endl;
         cout << "Account Number: "<< account_number << endl;
         cout << "Balance is: "<< balance << endl;
@@ -49,7 +48,11 @@ int main(){
     Bankaccount girdhari("Girdhari lal", 1012021, 1200.00 );
     girdhari.getdetails();
     cout<<endl<<"-----------------------------------------------------------"<<endl;
-
-
+    girdhari.withdraw(200);
+    girdhari.getdetails();
+    cout<<endl<<"-----------------------------------------------------------"<<endl;
+    girdhari.deposit(500);
+    girdhari.getdetails();
+    cout<<endl<<"-----------------------------------------------------------"<<endl;
 
 }
