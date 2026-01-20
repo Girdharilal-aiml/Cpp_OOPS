@@ -27,11 +27,16 @@ public:
         cout<<endl<<"-----------------------------------------------------------"<<endl;
     }
 
-    
+    void deposit(double amount){
+        if(amount>0){
+            balance += amount;
+        }
+    }
+
 
 };
 
 int main(){
-    Bankaccount Girdhari("Girdhari lal", 1012021, 1200.00 );
-    Girdhari.getdetails();
+    Bankaccount girdhari("Girdhari lal", 1012021, 1200.00 );
+    girdhari.getdetails();
 }
