@@ -8,13 +8,16 @@ class Bankaccount{
     double balance;
 
 public:
-    void details(string N, int AN, double B){
+
+    Bankaccount(){
+
+    }
+
+    Bankaccount(string N, int AN, double B){
         name = N;
         account_number = AN;
         balance = B;
     }
-
-
 
 };
 
