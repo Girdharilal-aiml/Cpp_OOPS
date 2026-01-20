@@ -1,4 +1,4 @@
-// Multi-level inheritance
+// Multi-level Inheritance
 
 #include "iostream"
 using namespace std;
@@ -13,18 +13,18 @@ private:
     int bootspace;
 };
 
-class Bike : public Vehicle{                       // class Bike extend to Vehicle    ---> Child/Derived Class
+class TwoWheeler : public Vehicle{                       // class Bike extend to Vehicle    ---> Child/Derived Class
 public:
-    int gears;
+    
 };
 
-class Car : public Vehicle{                        // Child/Derived Class
+class Car : public TwoWheeler{                        // Child/Derived Class
 public:
     bool sunroof;
 };
 
-class Truck : public Vehicle{                       // Child/Derived Class
+class Truck : public TwoWheeler{                       // Child/Derived Class
 public:
-    string Pickup_limit;
+    
 };
 
