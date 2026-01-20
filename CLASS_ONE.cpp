@@ -36,7 +36,7 @@ public:
         if(amount>0 && amount<=balance){
             balance -= amount;
         }else{
-            printf("INSUFFICIENT BALANCE!\n");
+            cout << "INSUFFICIENT BALANCE!" << endl;
         }
 
     }
