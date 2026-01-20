@@ -16,9 +16,10 @@ public:
 
 class phodu : public Cricketer,Engineer{
 public:
+    string name;
 
 };
 
 int main(){
-    
+
 }
