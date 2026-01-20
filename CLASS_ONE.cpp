@@ -24,7 +24,6 @@ public:
         cout << "Name is: "<< name << endl;
         cout << "Account Number: "<< account_number << endl;
         cout << "Balance is: "<< balance << endl;
-        cout<<endl<<"-----------------------------------------------------------"<<endl;
     }
 
     void deposit(double amount){
@@ -33,10 +32,24 @@ public:
         }
     }
 
+    void withdraw(double amount){
+
+        if(amount>0 && amount<=balance){
+            balance -= amount;
+        }else{
+            printf("INSUFFICIENT BALANCE!\n");
+        }
+
+    }
+
 
 };
 
 int main(){
     Bankaccount girdhari("Girdhari lal", 1012021, 1200.00 );
     girdhari.getdetails();
+    cout<<endl<<"-----------------------------------------------------------"<<endl;
+
+
+
 }
