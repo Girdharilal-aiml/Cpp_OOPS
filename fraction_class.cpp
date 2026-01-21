@@ -22,7 +22,7 @@ public:
     //     return ans;
     // }
 
-    Fraction add(Fraction f){
+    Fraction operator+(Fraction f){
         int newnum = this->num*f.deno + f.num*this->deno;
         int newdeno = this->deno*f.deno;
         Fraction ans(newnum,newdeno);
@@ -37,6 +37,6 @@ int main(){
     f1.display();
     f2.display();
     // Fraction f3 = f1.add(f2);
-    Fraction f3 = 
+    Fraction f3 = f1 + f2;
     f3.display();
 }
