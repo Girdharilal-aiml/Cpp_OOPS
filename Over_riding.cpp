@@ -6,7 +6,7 @@ public:
     int TopSpeed;
     float Mileage;
 
-    void Sound(){
+    virtual void Sound(){                               // Without virtual it will print Vroom Vroom
         cout<<"Vroom Vroom"<<endl; 
     }
     
@@ -26,5 +26,4 @@ public:
 int main(){
     Scooty* B = new Bike();
     B->Sound();
-
 }
