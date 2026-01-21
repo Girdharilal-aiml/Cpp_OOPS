@@ -18,7 +18,8 @@ public:
     Fraction add(Fraction f){
         int newnum = this->num*f.deno + f.num+this->deno;
         int newdeno = this->num*f.deno;
-        
+        Fraction ans(newnum,newdeno);
+        return ans;
     }
 
 };
@@ -28,5 +29,7 @@ int main(){
     Fraction f2(1,3);
     f1.display();
     f2.display();
+
+    
 
 }
