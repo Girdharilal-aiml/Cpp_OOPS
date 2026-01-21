@@ -16,8 +16,8 @@ public:
     }
 
     Fraction add(Fraction f){
-        int newnum = this->num*f.deno + f.num+this->deno;
-        int newdeno = this->num*f.deno;
+        int newnum = this->num*f.deno + f.num*this->deno;
+        int newdeno = this->deno*f.deno;
         Fraction ans(newnum,newdeno);
         return ans;
     }
