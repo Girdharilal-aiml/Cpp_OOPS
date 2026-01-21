@@ -11,10 +11,16 @@ public:
         this->deno = deno;
     }
 
-    void display(int num, int deno){
+    void display(){
         cout<<num<<" / "<<deno<<endl;
     }
 
 };
 
+int main(){
+    Fraction f1(1,2);
+    Fraction f2(1,3);
+    f1.display();
+    f2.display();
 
+}
