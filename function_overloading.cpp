@@ -3,6 +3,10 @@ using namespace std;
 
 class Loading{
 public: 
+    void sum(string a,string b){
+        cout<<a+b<<endl;
+    }
+
     void sum(int a, int b){
         cout<<a+b<<endl;
     }
@@ -11,10 +15,11 @@ public:
         cout<<a+b+c<<endl;
 
     }
+    
 };
 
 int main(){
-    
+
     Loading a;
     a.sum(2,3);
     a.sum(2,3,5);
