@@ -15,6 +15,12 @@ public:
         cout<<num<<" / "<<deno<<endl;
     }
 
+    Fraction add(Fraction f){
+        int newnum = this->num*f.deno + f.num+this->deno;
+        int newdeno = this->num*f.deno;
+        
+    }
+
 };
 
 int main(){
