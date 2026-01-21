@@ -29,6 +29,13 @@ public:
         return ans;
     }
 
+    Fraction operator-(Fraction f){
+        int newnum = this->num*f.deno - f.num*this->deno;
+        int newdeno = this->deno*f.deno;
+        Fraction ans(newnum,newdeno);
+        return ans;
+    }
+
 };
 
 int main(){
@@ -39,4 +46,7 @@ int main(){
     // Fraction f3 = f1.add(f2);
     Fraction f3 = f1 + f2;
     f3.display();
+
+    Fraction f4 = f1 - f2;
+    f4.display();
 }
