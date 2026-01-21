@@ -7,3 +7,9 @@ public:
         cout<<a+b<<endl;
     }
 };
+
+int main(){
+    Loading a;
+    a.sum(2,3);
+    
+}
