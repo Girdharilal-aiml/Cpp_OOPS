@@ -19,11 +19,12 @@ public:
     int gears;
 
     void Sound(){
-        cout<<"Vroom Vroom"<<endl; 
+        cout<<"Dhroom Dhroom"<<endl; 
     }
 };
 
 int main(){
-    
+    Scooty* B = new Bike();
+    B->Sound();
 
 }
