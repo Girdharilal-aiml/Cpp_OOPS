@@ -16,6 +16,10 @@ public:
 
     }
 
+    // int sum(int a, int b){       // ERROR 
+    //     return a+b;
+    // }
+
 };
 
 int main(){
@@ -23,6 +27,6 @@ int main(){
     Loading a;
     a.sum(2,3);
     a.sum(2,3,5);
-    a.sum("Girdhari","lal")
+    a.sum("Girdhari","lal");
 
 }
