@@ -23,7 +23,20 @@ public:
     }
 };
 
+class SuperBike : public Scooty{                       
+public:
+    int gears;
+
+    void Sound(){
+        cout<<"Zroom Zroom"<<endl; 
+    }
+};
+
 int main(){
     Scooty* B = new Bike();
     B->Sound();
+    
+    Scooty* C = new SuperBike();
+    C->Sound();
+    
 }
