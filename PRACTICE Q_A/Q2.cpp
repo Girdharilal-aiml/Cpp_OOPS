@@ -11,3 +11,7 @@ Function:
 showCar()
 */
 
+class Car{
+    string brand= "Aston martin";
+    int speed=212;
+}
