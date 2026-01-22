@@ -16,7 +16,7 @@ using namespace std;
 
 class Car{
     string Brand = "Aston martin";
-    int speed = 212;
+    int speed = 212;                        // just a guess
 
 public:
     void Showcar(){
