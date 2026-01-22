@@ -17,5 +17,8 @@ using namespace std;
 class Student{
     string name;
     int marks;
-    
+
+    void display(){
+        cout<<name<<" "<<endl;
+    }
 };
