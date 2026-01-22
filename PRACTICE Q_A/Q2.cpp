@@ -11,3 +11,11 @@ Function:
 display() → prints name & marks 
 */
 
+#include "iostream"
+using namespace std;
+
+class Student{
+    string name;
+    int marks;
+    
+};
