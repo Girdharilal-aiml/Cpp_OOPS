@@ -18,8 +18,13 @@ class Car{
     string Brand = "Aston martin";
     int speed = 212;
 
+public:
     void Showcar(){
         cout<<Brand<<" "<<speed<<endl;
     }
 };
 
+int main(){
+    Car C1;
+    C1.Showcar();
+}
