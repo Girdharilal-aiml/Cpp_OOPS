@@ -15,16 +15,20 @@ using namespace std;
 
 class Car{
 public:
-    string Brand = "Aston martin";
-    int speed = 212;                        // just a guess
+    string Brand ;
+    int speed;                        // just a guess
 
+    Car(string Brand, int speed){
+        this->Brand = Brand;
+        this->speed = speed;
+    }
     void Showcar(){
         cout<<Brand<<" "<<speed<<endl;
     }
 };
 
 int main(){
-    Car C1;
+    Car C1("Bugatti", 422);
     C1.Showcar();
 }
 
