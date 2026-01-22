@@ -15,10 +15,16 @@ display() → prints name & marks
 using namespace std;
 
 class Student{
-    string name;
-    int marks;
+    string name="Girdhari lal";
+    int marks=99;
 
+public:
     void display(){
-        cout<<name<<" "<<endl;
+        cout<<name<<" "<<marks<<endl;
     }
 };
+
+int main(){
+    Student S;
+    S.display();
+}
