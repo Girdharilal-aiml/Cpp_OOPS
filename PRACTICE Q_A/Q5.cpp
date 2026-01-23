@@ -12,3 +12,5 @@ setMarks() → no negative marks
 display()
 */
 
+#include<iostream>
+using namespace std;
