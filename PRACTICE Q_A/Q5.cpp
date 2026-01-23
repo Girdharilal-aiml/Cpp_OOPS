@@ -19,14 +19,20 @@ class Student{
     string name;
     int marks;
 public:
+    Student(string name){
+        this->name = name;
+    }
 
-    
+    void setmarks(int m){
+        marks=m;
+    }
     void display(){
         cout<<name<<" "<<marks<<endl;
     }
 };
 
 int main(){
-    Student S;
+    Student S("Girdhari lal");
+    S.setmarks(98);
     S.display();
 }
