@@ -24,5 +24,10 @@ public:
 };
 
 int main(){
+    Manager M1;
+    M1.name = "Mike";
+    M1.salary = 500000.00;
+    M1.bonus = 100000.00;
 
+    cout<<M1.name<<" "<<M1.salary<<" "<<M1.bonus<<endl;
 }
