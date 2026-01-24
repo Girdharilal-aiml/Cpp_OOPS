@@ -29,6 +29,6 @@ int main(){
     S1.age = 19;
     S1.marks = 99;
 
-    cout<<S1.name<<" "<<S1.marks<<" "<<S1.age<<endl;
+    cout<<S1.name<<" "<<S1.age<<" "<<S1.marks<<endl;
 
 }
