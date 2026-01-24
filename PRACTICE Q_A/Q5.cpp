@@ -26,15 +26,19 @@ public:
     void setmarks(int m){
         marks = 0;
         if(m>0){
-        marks=m;                    // Error!
+        marks=m;                    
         void display();
         }else if(m<0){
             cout<<"Invalid Marks!"<<endl;
         }
     }
-    
+
     void display(){
+    if(marks>0){
         cout<<name<<" "<<marks<<endl;
+    }else{
+        cout<<name<<endl;
+    }
     }
 
 };
@@ -43,6 +47,10 @@ int main(){
     Student S("Girdhari lal");
     S.setmarks(98);
     S.display();
+    cout<<"-------------------------------"<<endl;
     S.setmarks(-98);
+    S.display();
+    cout<<"-------------------------------"<<endl;
+    S.setmarks(89);
     S.display();
 }
