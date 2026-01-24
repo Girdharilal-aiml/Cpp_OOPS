@@ -23,17 +23,18 @@ public:
         this->name = name;
     }
 
-    void display(){
-        cout<<name<<" "<<marks<<endl;
-    }
-
     void setmarks(int m){
+        marks = 0;
         if(m>0){
         marks=m;                    // Error!
         void display();
-        }else if(marks<0){
+        }else if(m<0){
             cout<<"Invalid Marks!"<<endl;
         }
+    }
+    
+    void display(){
+        cout<<name<<" "<<marks<<endl;
     }
 
 };
