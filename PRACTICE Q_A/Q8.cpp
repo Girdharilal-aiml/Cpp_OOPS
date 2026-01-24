@@ -8,3 +8,10 @@ Employee → name, salary
 Manager → bonus
 Use inheritance.
 */
+
+#include"iostream"
+using namespace std;
+
+int main(){
+    
+}
