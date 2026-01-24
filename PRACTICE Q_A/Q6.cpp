@@ -50,5 +50,8 @@ public:
 
 
 int  main(){
+    BankAccount B1(1000.00);
+    cout<<"------------------------------------"<<endl;
+    B1.showbalance();
     
 }
