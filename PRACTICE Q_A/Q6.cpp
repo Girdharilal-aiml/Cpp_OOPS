@@ -57,4 +57,7 @@ int  main(){
     B1.deposit(200);
     B1.showbalance();
     cout<<"------------------------------------"<<endl;
-    
+    B1.withdraw(200);
+    B1.showbalance();
+    cout<<"------------------------------------"<<endl;
+}
