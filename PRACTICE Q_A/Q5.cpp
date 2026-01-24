@@ -31,7 +31,7 @@ public:
         if(m>0){
         marks=m;                    // Error!
         void display();
-        }else{
+        }else if(marks<0){
             cout<<"Invalid Marks!"<<endl;
         }
     }
@@ -41,5 +41,7 @@ public:
 int main(){
     Student S("Girdhari lal");
     S.setmarks(98);
+    S.display();
+    S.setmarks(-98);
     S.display();
 }
