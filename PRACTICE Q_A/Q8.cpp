@@ -18,6 +18,10 @@ public:
     double salary;
 };
 
+class Manager : public Employee{
+public:
+    double bonus;
+};
 
 int main(){
 
