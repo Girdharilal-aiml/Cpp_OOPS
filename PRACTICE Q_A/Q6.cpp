@@ -33,7 +33,18 @@ public:
         }
     }
 
-    
+    void withdraw(double amount){
+        if(amount>=0 && amount<=balance){
+            balance -= amount;
+            cout<<"Amount withdrawn: "<<amount<<endl;
+        }else{
+            cout<<"Insufficient balance!"<<endl;
+        }
+    }
+
+    void showbalance(){
+        cout<<"Current Balance: "<<balance<<endl;
+    }
 
 };
 
