@@ -18,8 +18,13 @@ public:
     int age;
 };
 
-
+class Student : public Person{
+public:
+    int marks;
+};
 
 int main(){
+    Student S1;
+    S1.name = ""
 
 }
