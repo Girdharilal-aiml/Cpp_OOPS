@@ -25,6 +25,14 @@ public:
         this->balance = balance;
     }
 
+    void deposit(double amount){
+        if(amount>0){
+            balance += amount;
+            cout<<"Amount deposited: "<<amount<<endl;
+
+        }
+    }
+
     
 
 };
