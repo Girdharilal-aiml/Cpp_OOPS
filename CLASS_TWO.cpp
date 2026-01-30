@@ -43,7 +43,11 @@ public:
             }
         }
 
-        
+        for(int i=0; i<len1; i++){
+            if(copy1[i] != '*' && copy1[i] != ' '){
+                remain1++;
+            }
+        }
         
     }
 
