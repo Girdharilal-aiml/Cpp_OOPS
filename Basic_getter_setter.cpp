@@ -11,7 +11,21 @@ private:
 
 public:
 
-    
+    void setmarks(float m){
+        marks = m;
+    }
+
+    void setname(string n){
+        name = n;
+    }
+
+    void setcourse(string c){
+        course = c;
+    }
+
+    void setage(int a){
+        age = a;
+    }
 
     float getmarks(){
         return marks;
