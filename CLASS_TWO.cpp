@@ -49,7 +49,9 @@ public:
             }
         }
         for(int j=0; j<len1; j++){
-            
+            if(copy2[j] != '*' && copy1[j] != ' '){
+                remain2++;
+            }
         }
     }
 
