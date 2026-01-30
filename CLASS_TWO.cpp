@@ -59,7 +59,12 @@ public:
         cout<<"Numbers of letters remain in Name1 : "<<remain1<<""<<endl;
         cout<<"Numbers of letters remain in Name2 : "<<remain2<<""<<endl;
 
-        
+        if((remain1 + remain2)%2==0){
+            cout<<"Numbers are compatable!"<<endl;
+        }else{
+            cout<<"Numbers are not compatable!"<<endl;
+        }
+
     }
 
 };
