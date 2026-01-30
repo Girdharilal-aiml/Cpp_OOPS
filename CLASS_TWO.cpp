@@ -76,6 +76,8 @@ int main(){
     cout<<"Enter Name2:";
     getline(cin,name2);
 
-    
+    NameMatcher Match(name1,name2);
+    Match.calculate();
+    Match.Display();
 
 }
