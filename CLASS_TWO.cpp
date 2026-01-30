@@ -10,7 +10,9 @@ private:
     int remain1;
     int remain2;
 
-    
+    void To_Upper(string &name){
+        
+    }
 
 public:
     NameMatcher(string name1, string name2){
