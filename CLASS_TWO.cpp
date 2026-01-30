@@ -36,7 +36,10 @@ public:
 
         for(int i = 0; i<len1; i++){
             for(int j=0; j<len2; j++){
-                
+                if(copy1[i] == copy2[j]){
+                    copy1[i] = '*';
+                    copy2[j] = '*';
+                }
             }
         }
 
