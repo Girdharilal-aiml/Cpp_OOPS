@@ -28,6 +28,12 @@ public:
         string copy1 = name1;
         string copy2 = name2;
 
+        To_Upper(copy1);
+        To_Upper(copy2);
+
+        int len1 = copy1.length();
+        int len2 = copy2.length();
+
         
 
         
