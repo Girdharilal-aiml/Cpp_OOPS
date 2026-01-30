@@ -56,6 +56,9 @@ public:
     }
 
     void Display(){
+        cout<<"Numbers of letters remain in Name1 : "<<remain1<<""<<endl;
+        cout<<"Numbers of letters remain in Name2 : "<<remain2<<""<<endl;
+
         
     }
 
