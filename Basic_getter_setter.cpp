@@ -3,7 +3,11 @@ using namespace std;
 
 class Student{
 private:
-
+    int age;
+    string name;
+    float marks;
+    string course;
+    
 
 public:
 
