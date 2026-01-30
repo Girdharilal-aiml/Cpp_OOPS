@@ -48,7 +48,9 @@ public:
                 remain1++;
             }
         }
-        
+        for(int j=0; j<len1; j++){
+            
+        }
     }
 
     
