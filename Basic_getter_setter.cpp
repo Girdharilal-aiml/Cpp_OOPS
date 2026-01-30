@@ -12,6 +12,23 @@ private:
 public:
 
     
+
+    float getmarks(){
+        return marks;
+    }
+
+    string getname(){
+        return name;
+    }
+
+    string getcourse(){
+        return course;
+    }
+
+    int getage(){
+        return age;
+    }
+
 };
 
 int main(){
