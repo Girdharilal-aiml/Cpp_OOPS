@@ -71,5 +71,11 @@ public:
 
 int main(){
     string name1, name2;
+    cout<<"Enter Name1:";
+    getline(cin,name1);
+    cout<<"Enter Name2:";
+    getline(cin,name2);
+
     
+
 }
