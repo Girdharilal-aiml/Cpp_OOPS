@@ -11,7 +11,9 @@ private:
     int remain2;
 
     void To_Upper(string &name){
-        
+        for(int i= 0; i<name.length(); i++){
+            name[i] = toupper(name[i]);
+        }
     }
 
 public:
