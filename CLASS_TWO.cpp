@@ -20,7 +20,15 @@ public:
         remain2 = 0;
     }
 
-    
+    void calculate(){
+        string copy1 = name1;
+        string copy2 = name2;
+
+        
+
+        
+        
+    }
 
     
 
