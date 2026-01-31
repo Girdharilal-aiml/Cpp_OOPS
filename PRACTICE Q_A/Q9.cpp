@@ -67,14 +67,14 @@ public:
     }
 
     void refill(){
-      int Ref = Refillable;
+      int Refill = Refillable;
       cout<<"Is pen Refillable?(1-YES,0-NO): ";
-      cin>>Ref;
+      cin>>Refill;
 
-      if(Ref == 1){
+      if(Refill == 1){
         cout<<"Ink Refilled"<<endl; 
-        Ink_Status = 1
-      }else if(Ref == 0){
+        Ink_Status = 1;
+      }else if(Refill == 0){
         cout<<"The marker cannot be refilled."<<endl; 
         Ink_Status = 0;
       }
@@ -95,6 +95,6 @@ int main(){
 
     BM1.set_info(company1,color1);
     cout<<BM1.get_com()<<" "<<BM1.get_color()<<endl;
-
-
+    BM1.write();
+    BM1.refill();
 }
