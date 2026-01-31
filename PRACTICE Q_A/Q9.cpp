@@ -58,10 +58,13 @@ public:
       cin>>iks;
 
       if(iks == 0){
+        cout<<endl;
         cout<<"Proceed with writing."<<endl; 
+        cout<<endl;
         Ink_Status = 1;
       }else if(iks == 1){
         cout<<"Ink Empty! writing is not possible."<<endl; 
+        cout<<endl;
         Ink_Status = 0;
       }
     }
@@ -70,12 +73,16 @@ public:
       int Refill = Refillable;
       cout<<"Is pen Refillable?(1-YES,0-NO): ";
       cin>>Refill;
+      cout<<endl;
+
 
       if(Refill == 1){
         cout<<"Ink Refilled"<<endl; 
+        cout<<endl;
         Ink_Status = 1;
       }else if(Refill == 0){
         cout<<"The marker cannot be refilled."<<endl; 
+        cout<<endl;
         Ink_Status = 0;
       }
     }
@@ -96,7 +103,13 @@ int main(){
     getline(cin, com3);
     cout<<"Enter pen color: ";
     getline(cin, col3);
-    
+    string company1, color1, company2, color2, company3, color3;
+    company1 = com1;
+    color1 = col1;
+    company2 = com2;
+    color2 = col2;
+    company3 = com3;
+    color3 = col3;
 
     BoardMarker BM1(company1, color1);
     BoardMarker BM2(company2, color2);
@@ -104,7 +117,21 @@ int main(){
 
 
     BM1.set_info(company1,color1);
+    BM2.set_info(company2,color2);
+    BM3.set_info(company3,color3);
+
+    cout<<"-----------------------------------"<<endl;
     cout<<BM1.get_com()<<" "<<BM1.get_color()<<endl;
     BM1.write();
     BM1.refill();
+    cout<<"-----------------------------------"<<endl;
+    cout<<BM2.get_com()<<" "<<BM2.get_color()<<endl;
+    BM2.write();
+    BM2.refill();
+    cout<<"-----------------------------------"<<endl;
+    cout<<BM3.get_com()<<" "<<BM3.get_color()<<endl;
+    BM3.write();
+    BM3.refill();
+    cout<<"-----------------------------------"<<endl;
+
 }
