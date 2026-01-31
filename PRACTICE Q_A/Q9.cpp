@@ -83,15 +83,25 @@ public:
 };
 
 int main(){
-    string com1,col1;
+    string com1,col1, com2,col2, com3,col3;
     cout<<"Enter pen company name: ";
     getline(cin, com1);
     cout<<"Enter pen color: ";
     getline(cin, col1);
-    string company1, color1;
-    company1 = com1;
-    color1 = col1;
+    cout<<"Enter pen company name: ";
+    getline(cin, com2);
+    cout<<"Enter pen color: ";
+    getline(cin, col2);
+    cout<<"Enter pen company name: ";
+    getline(cin, com3);
+    cout<<"Enter pen color: ";
+    getline(cin, col3);
+    
+
     BoardMarker BM1(company1, color1);
+    BoardMarker BM2(company2, color2);
+    BoardMarker BM3(company3, color3);
+
 
     BM1.set_info(company1,color1);
     cout<<BM1.get_com()<<" "<<BM1.get_color()<<endl;
