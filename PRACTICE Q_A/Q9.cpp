@@ -52,8 +52,22 @@ public:
       return color;
     }
 
-    void write();
-    void refill();
+    void write(){
+      int iks = Ink_Status;
+      cout<<"Is pen ink empty?(1-YES,0-NO): ";
+      cin>>iks;
+
+      if(iks == 0){
+        cout<<"Proceed with writing."<<endl; 
+      }else if(iks == 1){
+        cout<<"Ink Empty! writing is not possible."<<endl; 
+      }
+
+    }
+    void refill(){
+      int Ref = Refillable;
+
+    }
 
 };
 
