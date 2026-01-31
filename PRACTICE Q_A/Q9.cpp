@@ -59,14 +59,25 @@ public:
 
       if(iks == 0){
         cout<<"Proceed with writing."<<endl; 
+        Ink_Status = 1;
       }else if(iks == 1){
         cout<<"Ink Empty! writing is not possible."<<endl; 
+        Ink_Status = 0;
       }
-
     }
+
     void refill(){
       int Ref = Refillable;
+      cout<<"Is pen Refillable?(1-YES,0-NO): ";
+      cin>>Ref;
 
+      if(Ref == 1){
+        cout<<"Ink Refilled"<<endl; 
+        Ink_Status = 1
+      }else if(Ref == 0){
+        cout<<"The marker cannot be refilled."<<endl; 
+        Ink_Status = 0;
+      }
     }
 
 };
