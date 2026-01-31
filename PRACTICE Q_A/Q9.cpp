@@ -58,7 +58,18 @@ public:
 };
 
 int main(){
-    
+    string com1,col1;
+    cout<<"Enter pen company name: ";
+    getline(cin, com1);
+    cout<<"Enter pen color: ";
+    getline(cin, col1);
+    string company1, color1;
+    company1 = com1;
+    color1 = col1;
+    BoardMarker BM1(company1, color1);
+
+    BM1.set_info(company1,color1);
+    cout<<BM1.get_com()<<" "<<BM1.get_color()<<endl;
 
 
 }
