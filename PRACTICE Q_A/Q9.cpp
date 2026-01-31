@@ -26,18 +26,39 @@
 using namespace std;
 
 class BoardMarker{
-public:
+private:
     string Company;
     string color;
     bool Refillable;
     bool Ink_Status;
-
+public:
     BoardMarker(string Company, string color){
         this->color = color;
         this->Company = Company;
+        Refillable = 0;
+        Ink_Status = 0;
+    }
+
+    void set_info(string PC, string P_col){
+        Company = PC;
+        color = P_col;
+    }
+
+    string get_com(){
+      return Company;
+    }
+
+    string get_color(){
+      return color;
     }
 
     void write();
     void refill();
 
 };
+
+int main(){
+    
+
+
+}
