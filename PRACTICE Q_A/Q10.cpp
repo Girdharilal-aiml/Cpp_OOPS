@@ -43,7 +43,13 @@ public:
       double circumference = 2 * pi * radius;
       return circumference;
    }
-   
+   void Display(){
+      cout<<"Radius        : "<<radius<<""<<endl;
+      cout<<"Pi            : "<<pi<<""<<endl;
+      cout<<"Area          : "<<getArea()<<""<<endl;
+      cout<<"Diameter      : "<<getDiameter()<<""<<endl;
+      cout<<"Circumference : "<<getCircumference()<<""<<endl; 
+   }
 
 };
 
