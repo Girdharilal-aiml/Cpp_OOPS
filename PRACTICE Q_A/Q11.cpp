@@ -44,7 +44,16 @@ public:
 
     void calculate(double ml){
 
-      
+      if(ml<=water_capacity_M_litres){
+        water_capacity_M_litres -= ml;
+        water_capacity_litres = water_capacity_M_litres/1000.0;
+      }else if(ml<0){
+        cout<<"Invalid Input";
+        return;
+      }else{
+        cout<<"Invalid Input";
+        return;
+      }
 
     }
 
