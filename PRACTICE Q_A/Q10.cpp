@@ -18,11 +18,12 @@
 #include"iostream"
 using namespace std;
 
-class Circuit{
-public:
+class Circle{
+private:
    double radius;
-   double pi = 3.14159;
+   const double pi = 3.14159;
 
+public:
    void setRadius(double r){
       radius = r;
    }
@@ -31,17 +32,13 @@ public:
    }
 
    double getArea(){
-      double area;
-      area = pi * radius * radius;
-      return area;
+      return pi * radius * radius;
    }
    double getDiameter(){
-      double diameter = radius * 2;
-      return diameter;
+      return radius * 2;
    }
    double getCircumference(){
-      double circumference = 2 * pi * radius;
-      return circumference;
+      return 2 * pi * radius;
    }
    void Display(){
       cout<<"Radius        : "<<radius<<""<<endl;
@@ -55,12 +52,12 @@ public:
 };
 
 int main(){
-   Circuit Circle;
-   int radius;
-   cout<<"Enter Radius: ";
+   Circle Circle1;
+   double radius;
+   cout<<"Enter Radius  : ";
    cin>>radius;
 
-   Circle.setRadius(radius);
-   Circle.Display();
+   Circle1.setRadius(radius);
+   Circle1.Display();
    
 }
