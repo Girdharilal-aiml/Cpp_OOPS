@@ -67,7 +67,21 @@ public:
 
    };
 
-   
+   void edit_price(){
+      string searchname;
+      bool found = false;
+      for(int i= 0; i<qty; i++){
+         if(items_name[i]==searchname){
+            found = true;
+            cout<<"Item name: "<<items_name<<endl;
+            cout<<"Enter Item price: ";
+            cin>>items_price[i];
+         }
+      }
+      if(!found){
+         cout<<"Item not found!"<<endl;
+      }
+   }
 
    
 
