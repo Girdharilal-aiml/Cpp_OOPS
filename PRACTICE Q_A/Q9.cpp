@@ -101,7 +101,19 @@ int main(){
     cout<<"Enter pen company name: ";
     getline(cin, company3);
     cout<<"Enter pen color: ";
-    
+    getline(cin, color3);
+    cout<<"Is pen Refillable?(1-YES,0-NO): ";
+    cin>>Ref3;
+    cin.ignore();
+    cout<<"Is pen ink empty?(1-YES,0-NO): ";
+    cin>>st3;
+    cin.ignore();
+    cout<<endl;
+
+    BoardMarker BM1(company1, color1, Ref1, st1);
+    BoardMarker BM2(company2, color2, Ref2, st2);
+    BoardMarker BM3(company3, color3, Ref3, st3);
+
     cout<<"-----------------------------------"<<endl;
     cout<<BM1.get_com()<<" "<<BM1.get_color()<<endl;
     BM1.write();
