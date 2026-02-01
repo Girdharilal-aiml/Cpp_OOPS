@@ -103,7 +103,11 @@ public:
       }
    }
 
-   
+   void retreive(string items_name[]){
+      for(int i=0 ; i<qty;i++){
+         cout<<i+1<<"."<<items_name[i]<<endl;
+      }
+   }
 
    
 
