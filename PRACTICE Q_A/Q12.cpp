@@ -45,7 +45,23 @@ public:
       Add_Items_and_prices(items_price, items_name);
       int choice;
       do{
-         
+         cout<<"1.Add Items and prices"<<endl;
+         cout<<"2.Retrieve list of items"<<endl;
+         cout<<"3.Edit item prices"<<endl;
+         cout<<"4.View all items with prices"<<endl;
+         cout<<"5.Reciept"<<endl;
+         cout<<"6.Exit"<<endl;
+         cout<<"Enter your choice: ";
+         cin>>choice;
+         switch(choice){
+            case 1:  Add_Items_and_prices(items_price, items_name);
+            case 2:  retreive(items_name);
+            case 3:  edit_price();
+            case 4:  view_with_prices(items_price,items_name);
+            case 5:  receipt(items_price,items_name);
+            case 6:  cout<<"Thank you for shopping"<<endl;
+            default: cout<<"Invalid input! Try again."<<endl;
+         }
 
       }while(choice!=6);
 
