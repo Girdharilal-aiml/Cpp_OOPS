@@ -109,6 +109,21 @@ public:
       }
    }
 
-   
+   void receipt(double items_price[], string items_name[]){
+      double total = 0;
+      for(int i= 0; i<qty;i++){
+         total += items_price[i];
+      }
+
+      cout<<"-----------------------------------------"<<endl;
+      cout<<"S.No \t Items Name \t Item price"<<endl;
+      cout<<"-----------------------------------------"<<endl;
+      for(int i=0 ; i<qty;i++){
+         cout<<i<<"\t"<<items_name[i]<<"\t"<<items_price[i]<<endl;
+      }
+      cout<<"-----------------------------------------"<<endl;
+      cout<<"Total Items: "<<qty<<"\tTotal Price:  "<<total<<endl;
+      cout<<"-----------------------------------------"<<endl;
+   }
 
 };
