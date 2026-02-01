@@ -18,6 +18,24 @@
 #include"iostream"
 using namespace std;
 
+class Circuit{
+public:
+   double radius;
+   double pi = 3.14159;
+
+   void setRadius(double r){
+      radius = r;
+   }
+   double getRadius(){
+      return radius;
+   }
+
+   
+   
+
+};
+
 int main(){
+   
    
 }
