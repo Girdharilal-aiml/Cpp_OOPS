@@ -57,7 +57,12 @@ public:
 
     }
 
-    
+    void Display(){
+      cout<<"Company                   : "<<company<<""<<endl;
+      cout<<"Color                     : "<<color<<""<<endl;
+      cout<<"Water Remaining(l)        : "<<water_capacity_litres<<" l"<<endl;
+      cout<<"Water Remaining(ml)       : "<<water_capacity_M_litres<<" ml"<<endl;
+    }
 
 };
 
