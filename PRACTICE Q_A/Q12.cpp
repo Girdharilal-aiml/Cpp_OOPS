@@ -33,7 +33,12 @@ public:
       }
    }
 
-   
+   void set_items_name_price(string* itn, double* itp){
+      items_name = itn;
+      items_price = itp;
+      items_name = new string[qty];
+      items_price = new double[qty];
+   }
 
 
 };
