@@ -19,7 +19,7 @@
 #include"iostream"
 using namespace std;
 
-class WateBottle{
+class WaterBottle{
 private:
     string company;
     string color;
@@ -28,30 +28,35 @@ private:
     
 public:
 
-    void get_company_color(string com, string col){
+    void set_company_color(string com, string col, int capa){
       company = com;
       color = col;
-      water_capacity_M_litres = 1000.0;
-      water_capacity_litres = water_capacity_M_litres/1000.0;
+      water_capacity_M_litres = capa;
+      water_capacity_litres = water_capacity_M_litres / 1000;
     }
 
-    string setcompany(){
+    int getcapacity(){
+      return water_capacity_M_litres;
+    }
+    string getcompany(){
       return company;
     }
-    string setcolor(){
+    string getcolor(){
       return color;
     }
 
-    void calculate(double ml){
+    void calculate(int ml){
 
-      if(ml<=water_capacity_M_litres){
-        water_capacity_M_litres -= ml;
-        water_capacity_litres = water_capacity_M_litres/1000.0;
-      }else if(ml<0){
-        cout<<"Invalid Input";
+      if (ml < 0) {
+        cout << "Invalid Input";
         return;
-      }else{
-        cout<<"Invalid Input";
+      }
+      else if(ml <= water_capacity_M_litres) {
+        water_capacity_M_litres -= ml;
+        water_capacity_litres = water_capacity_M_litres / 1000.0;
+      }
+      else{
+        cout << "Not enough water!";
         return;
       }
 
@@ -67,17 +72,20 @@ public:
 };
 
 int main(){
-    WateBottle WB1;
+    WaterBottle WB1;
     string com1, col1;
-    int mll;
+    int mll, capacity;
     cout<<"Enter Company name: ";
     getline(cin,com1);
     cout<<"Enter Color name: ";
     getline(cin,col1);
+    cout<<"Water Capacity in ml: ";
+    cin>>capacity;
+    cin.ignore();
     cout<<"Water drunk in ML: ";
     cin>>mll;
 
-    WB1.get_company_color(com1,col1);
+    WB1.set_company_color(com1,col1,capacity);
     WB1.calculate(mll);
 
     WB1.Display();
