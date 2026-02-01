@@ -127,3 +127,9 @@ public:
    }
 
 };
+
+int main(){
+   StationeryShop S1;
+   S1.Menu();
+
+}
