@@ -40,5 +40,25 @@ public:
       items_price = new double[qty];
    }
 
+   void Menu(){
+      sizeofarray();
+      Add_Items_and_prices(items_price, items_name);
+      int choice;
+      do{
+         
+
+      }while(choice!=6);
+
+   };
+
+   
+
+   
+
+   
+
+   
+
+   
 
 };
