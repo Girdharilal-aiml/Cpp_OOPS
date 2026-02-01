@@ -28,7 +28,25 @@ private:
     
 public:
 
-    
+    void get_company_color(string com, string col){
+      company = com;
+      color = col;
+      water_capacity_M_litres = 1000.0;
+      water_capacity_litres = water_capacity_M_litres/1000.0;
+    }
+
+    string setcompany(){
+      return company;
+    }
+    string setcolor(){
+      return color;
+    }
+
+    void calculate(double ml){
+
+      
+
+    }
 
     
 
