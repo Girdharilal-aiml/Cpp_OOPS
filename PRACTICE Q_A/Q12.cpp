@@ -92,7 +92,16 @@ public:
       }
    }
 
-   
+   void Add_Items_and_prices(double items_price[], string items_name[]){
+      for(int i=0 ; i<qty;i++){
+         cout<<"Enter "<<i+1<<" Item name: ";
+         getline(cin,items_name[i]);
+         cout<<"Enter Item Price: ";
+         cin>>items_price[i];
+         cin.ignore();
+         cout<<endl;
+      }
+   }
 
    
 
