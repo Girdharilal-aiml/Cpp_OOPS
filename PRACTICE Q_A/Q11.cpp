@@ -15,3 +15,18 @@
 
    Demonstrate the functionality in the main method.
 */
+
+#include"iostream"
+using namespace std;
+
+class WateBottle{
+private:
+    string company;
+    string color;
+    double water_capacity;
+    
+};
+
+int main(){
+
+}
