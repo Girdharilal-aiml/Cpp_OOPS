@@ -15,6 +15,7 @@
 */
 
 #include"iostream"
+#include <limits>
 using namespace std;
 
 class StationeryShop{
@@ -23,21 +24,24 @@ private:
    double* items_price;
 
 public:
-   int qty;
+   int qty,count=0;
 
    void sizeofarray(){
       cout<<"Enter Items quantity: ";
       cin>>qty;
-      cin.ignore();
+      cin.ignore(numeric_limits<streamsize>::max(), '\n');
       if(qty<0){
          return;
+      }else{
+         items_name = new string[qty];
+         items_price = new double[qty];
       }
    }
 
-   void set_items_name_price(string* itn, double* itp){
-      items_name = new string[qty];
-      items_price = new double[qty];
-   }
+   // void get_items_name_price(){
+      
+   // }
+
 
    void Menu(){
       sizeofarray();
@@ -68,7 +72,7 @@ public:
 
    void edit_price(){
       string searchname;
-      cin.ignore();
+      cin.ignore(numeric_limits<streamsize>::max(), '\n');
       cout<<"Enter itemname: ";
       getline(cin,searchname);
       bool found = false;
@@ -95,13 +99,15 @@ public:
    }
 
    void Add_Items_and_prices(double items_price[], string items_name[]){
-      cin.ignore(); 
-      for(int i=0 ; i<qty;i++){
-         cout<<"Enter "<<i<<" Item name: ";
-         getline(cin,items_name[i]);
-         cout<<"Enter Item Price: ";
-         cin>>items_price[i];
-         cout<<endl;
+      cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+      for(int i=count ; i<qty;i++){
+      cout<<"Enter "<<i<<" Item name: ";
+      getline(cin,items_name[i]);
+      cout<<"Enter Item Price: ";
+      count++;
+      cin>>items_price[i];
+      cout<<endl;
       }
    }
 
