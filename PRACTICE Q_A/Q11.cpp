@@ -67,5 +67,18 @@ public:
 };
 
 int main(){
-    
+    WateBottle WB1;
+    string com1, col1;
+    int mll;
+    cout<<"Enter Company name: ";
+    getline(cin,com1);
+    cout<<"Enter Color name: ";
+    getline(cin,col1);
+    cout<<"Water drunk in ML: ";
+    cin>>mll;
+
+    WB1.get_company_color(com1,col1);
+    WB1.calculate(mll);
+
+    WB1.Display();
 }
