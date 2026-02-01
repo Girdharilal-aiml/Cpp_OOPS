@@ -23,10 +23,17 @@ class WateBottle{
 private:
     string company;
     string color;
-    double water_capacity;
+    int water_capacity_M_litres;
+    double water_capacity_litres;
     
+public:
+
+    
+
+    
+
 };
 
 int main(){
-
+    
 }
