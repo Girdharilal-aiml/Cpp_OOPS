@@ -28,14 +28,13 @@ public:
    void sizeofarray(){
       cout<<"Enter Items quantity: ";
       cin>>qty;
+      cin.ignore();
       if(qty<0){
          return;
       }
    }
 
    void set_items_name_price(string* itn, double* itp){
-      items_name = itn;
-      items_price = itp;
       items_name = new string[qty];
       items_price = new double[qty];
    }
@@ -54,12 +53,12 @@ public:
          cout<<"Enter your choice: ";
          cin>>choice;
          switch(choice){
-            case 1:  Add_Items_and_prices(items_price, items_name);
-            case 2:  retreive(items_name);
-            case 3:  edit_price();
-            case 4:  view_with_prices(items_price,items_name);
-            case 5:  receipt(items_price,items_name);
-            case 6:  cout<<"Thank you for shopping"<<endl;
+            case 1:  Add_Items_and_prices(items_price, items_name); break;
+            case 2:  retreive(items_name); break;
+            case 3:  edit_price(); break;
+            case 4:  view_with_prices(items_price,items_name); break;
+            case 5:  receipt(items_price,items_name); break;
+            case 6:  delete1(); cout<<"Thank you for shopping"<<endl; break;
             default: cout<<"Invalid input! Try again."<<endl;
          }
 
@@ -69,11 +68,14 @@ public:
 
    void edit_price(){
       string searchname;
+      cin.ignore();
+      cout<<"Enter itemname: ";
+      getline(cin,searchname);
       bool found = false;
-      for(int i= 0; i<qty; i++){
+      for(int i=0 ; i<qty;i++){
          if(items_name[i]==searchname){
             found = true;
-            cout<<"Item name: "<<items_name<<endl;
+            cout<<"Item name: "<<items_name[i]<<endl;
             cout<<"Enter Item price: ";
             cin>>items_price[i];
          }
@@ -86,32 +88,32 @@ public:
    void view_with_prices(double items_price[], string items_name[]){
       cout<<"-------------------------------------------------"<<endl;
       for(int i=0 ; i<qty;i++){
-         cout<<i+1<<"."<<"Item name:  "<<items_name[i]<<endl;
-         cout<<i+1<<"."<<"Item price: "<<items_price[i]<<endl;
+         cout<<i<<"."<<"Item name:  "<<items_name[i]<<endl;
+         cout<<i<<"."<<"Item price: "<<items_price[i]<<endl;
          cout<<"-------------------------------------------------"<<endl;
       }
    }
 
    void Add_Items_and_prices(double items_price[], string items_name[]){
+      cin.ignore(); 
       for(int i=0 ; i<qty;i++){
-         cout<<"Enter "<<i+1<<" Item name: ";
+         cout<<"Enter "<<i<<" Item name: ";
          getline(cin,items_name[i]);
          cout<<"Enter Item Price: ";
          cin>>items_price[i];
-         cin.ignore();
          cout<<endl;
       }
    }
 
    void retreive(string items_name[]){
       for(int i=0 ; i<qty;i++){
-         cout<<i+1<<"."<<items_name[i]<<endl;
+         cout<<i<<"."<<items_name[i]<<endl;
       }
    }
 
    void receipt(double items_price[], string items_name[]){
       double total = 0;
-      for(int i= 0; i<qty;i++){
+      for(int i=0 ; i<qty;i++){
          total += items_price[i];
       }
 
@@ -124,6 +126,11 @@ public:
       cout<<"-----------------------------------------"<<endl;
       cout<<"Total Items: "<<qty<<"\tTotal Price:  "<<total<<endl;
       cout<<"-----------------------------------------"<<endl;
+   }
+
+   void delete1(){
+      delete[] items_name;
+      delete[] items_price;
    }
 
 };
