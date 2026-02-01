@@ -14,3 +14,10 @@
    creates a Circle object, and displays area, diameter,
    and circumference.
 */
+
+#include"iostream"
+using namespace std;
+
+int main(){
+   
+}
