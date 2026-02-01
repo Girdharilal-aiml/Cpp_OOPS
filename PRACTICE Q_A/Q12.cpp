@@ -13,3 +13,27 @@
    - Shopkeeper inputs items purchased and quantities
    - Receipt is generated and displayed for the customer
 */
+
+#include"iostream"
+using namespace std;
+
+class StationeryShop{
+private:
+   string* items_name;
+   double* items_price;
+
+public:
+   int qty;
+
+   void sizeofarray(){
+      cout<<"Enter Items quantity: ";
+      cin>>qty;
+      if(qty<0){
+         return;
+      }
+   }
+
+   
+
+
+};
