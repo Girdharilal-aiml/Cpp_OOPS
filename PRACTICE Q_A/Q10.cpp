@@ -48,12 +48,19 @@ public:
       cout<<"Pi            : "<<pi<<""<<endl;
       cout<<"Area          : "<<getArea()<<""<<endl;
       cout<<"Diameter      : "<<getDiameter()<<""<<endl;
-      cout<<"Circumference : "<<getCircumference()<<""<<endl; 
+      cout<<"Circumference : "<<getCircumference()<<""<<endl;
+      
    }
 
 };
 
 int main(){
-   
+   Circuit Circle;
+   int radius;
+   cout<<"Enter Radius: ";
+   cin>>radius;
+
+   Circle.setRadius(radius);
+   Circle.Display();
    
 }
