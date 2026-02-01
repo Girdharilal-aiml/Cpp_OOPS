@@ -83,7 +83,14 @@ public:
       }
    }
 
-   
+   void view_with_prices(double items_price[], string items_name[]){
+      cout<<"-------------------------------------------------"<<endl;
+      for(int i=0 ; i<qty;i++){
+         cout<<i+1<<"."<<"Item name:  "<<items_name[i]<<endl;
+         cout<<i+1<<"."<<"Item price: "<<items_price[i]<<endl;
+         cout<<"-------------------------------------------------"<<endl;
+      }
+   }
 
    
 
