@@ -30,7 +30,19 @@ public:
       return radius;
    }
 
-   
+   double getArea(){
+      double area;
+      area = pi * radius * radius;
+      return area;
+   }
+   double getDiameter(){
+      double diameter = radius * 2;
+      return diameter;
+   }
+   double getCircumference(){
+      double circumference = 2 * pi * radius;
+      return circumference;
+   }
    
 
 };
