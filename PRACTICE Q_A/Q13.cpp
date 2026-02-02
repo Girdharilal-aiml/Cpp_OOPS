@@ -41,6 +41,9 @@ public:
     string setname(){
       return name;
     }
+    double setsalary(){
+      return M_salary;
+    }
     
     
 
