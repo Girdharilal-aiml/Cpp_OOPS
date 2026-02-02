@@ -73,5 +73,10 @@ public:
 };
 
 int main(){
-   
+    Employee E1;
+    E1.get_data("Girdhari lal",100000);
+    //E1.display_Normal();
+
+    
+
 }
