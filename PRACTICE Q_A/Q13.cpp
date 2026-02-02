@@ -50,7 +50,9 @@ public:
     double Salary_after_tax(){
       return updated_salary;
     }
-    
+    double salary_new_tax(){
+      return UPD_S_NT;
+    }
 
     
 
