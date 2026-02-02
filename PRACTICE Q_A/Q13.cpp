@@ -29,13 +29,15 @@ private:
 public:
     void get_data(string n, double sal){
       name = n;
+      new_tax = Tax_percent;
       M_salary = sal;
       Tax_percent = 0.02;
       updated_salary = M_salary - (M_salary * Tax_percent);
       UPD_S_NT = M_salary - (M_salary * new_tax);
     }
     void update_tax_percentage(double tax){
-      new_tax = tax/100;
+      new_tax = tax / 100;
+      UPD_S_NT = M_salary - (M_salary * new_tax);
     }
 
     string setname(){
@@ -65,9 +67,9 @@ public:
       cout<<"Name : "<<name<<endl;
       cout<<"Monthly Salary : "<<M_salary<<endl;
       cout<<"Tax percentage : "<<Tax_percent<<endl;
-      cout<<"Updated Salary after 2%% tax : "<<updated_salary<<endl;
-      cout<<"Updated Tax %% : "<<new_tax<<endl;
-      cout<<"Updated Salary after "<<new_tax<<"%% tax : "<<UPD_S_NT<<endl;
+      cout<<"Updated Salary after %2 tax : "<<updated_salary<<endl;
+      cout<<"Updated Tax % : "<<new_tax<<endl;
+      cout<<"Updated Salary after %"<<new_tax<<" tax : "<<UPD_S_NT<<endl;
     }
 
 };
@@ -75,13 +77,12 @@ public:
 int main(){
     Employee E1;
     E1.get_data("Girdhari lal",100000);
-    //E1.display_Normal();
-
     E1.Display_new();
     cout<<"==================================================="<<endl;
     E1.update_tax_percentage(3);
     E1.Display_new();
     cout<<"==================================================="<<endl;
+    E1.display_Normal();
 
 
 
