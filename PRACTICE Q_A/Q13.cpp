@@ -61,7 +61,14 @@ public:
       cout<<"Updated Salary after 2%% tax : "<<updated_salary<<endl;
     }
 
-   
+    void Display_new(){
+      cout<<"Name : "<<name<<endl;
+      cout<<"Monthly Salary : "<<M_salary<<endl;
+      cout<<"Tax percentage : "<<Tax_percent<<endl;
+      cout<<"Updated Salary after 2%% tax : "<<updated_salary<<endl;
+      cout<<"Updated Tax %% : "<<new_tax<<endl;
+      cout<<"Updated Salary after "<<new_tax<<"%% tax : "<<UPD_S_NT<<endl;
+    }
 
 };
 
