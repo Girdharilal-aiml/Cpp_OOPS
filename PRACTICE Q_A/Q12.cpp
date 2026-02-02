@@ -39,7 +39,6 @@ public:
    }
    void Menu(){
       sizeofarray();
-      //Add_Items_and_prices(items_price, items_name);
       int choice;
       do{
          cout<<"1.Add Items and prices(work only one time)"<<endl;
@@ -56,7 +55,7 @@ public:
             case 3:  edit_price(); break;
             case 4:  view_with_prices(items_price,items_name); break;
             case 5:  receipt(items_price,items_name); break;
-            case 6:  receipt(items_price,items_name); delete1(); cout<<"Thank you for shopping"<<endl; break;
+            case 6:  receipt(items_price,items_name); cout<<"Thank you for shopping"<<endl; delete1(); break;
             default: cout<<"Invalid input! Try again."<<endl;
          }
 
