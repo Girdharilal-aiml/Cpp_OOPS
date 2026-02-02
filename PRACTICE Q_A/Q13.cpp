@@ -44,7 +44,11 @@ public:
     double setsalary(){
       return M_salary;
     }
+    double settax(){
+      return new_tax;
+    }
     
+
     
 
 };
