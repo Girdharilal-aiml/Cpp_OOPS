@@ -38,6 +38,9 @@ public:
       new_tax = tax/100;
     }
 
+    string setname(){
+      return name;
+    }
     
     
 
