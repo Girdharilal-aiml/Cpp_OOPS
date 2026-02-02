@@ -37,12 +37,6 @@ public:
          items_price = new double[qty];
       }
    }
-
-   // void get_items_name_price(){
-      
-   // }
-
-
    void Menu(){
       sizeofarray();
       Add_Items_and_prices(items_price, items_name);
