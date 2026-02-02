@@ -27,6 +27,17 @@ private:
     double UPD_S_NT;
 
 public:
+    void get_data(string n, double sal){
+      name = n;
+      M_salary = sal;
+      Tax_percent = 0.02;
+      updated_salary = M_salary - (M_salary * Tax_percent);
+      UPD_S_NT = M_salary - (M_salary * new_tax);
+    }
+    
+
+    
+    
 
 };
 
