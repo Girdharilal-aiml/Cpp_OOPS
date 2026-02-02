@@ -39,10 +39,10 @@ public:
    }
    void Menu(){
       sizeofarray();
-      Add_Items_and_prices(items_price, items_name);
+      //Add_Items_and_prices(items_price, items_name);
       int choice;
       do{
-         cout<<"1.Add Items and prices"<<endl;
+         cout<<"1.Add Items and prices(work only one time)"<<endl;
          cout<<"2.Retrieve list of items"<<endl;
          cout<<"3.Edit item prices"<<endl;
          cout<<"4.View all items with prices"<<endl;
@@ -56,7 +56,7 @@ public:
             case 3:  edit_price(); break;
             case 4:  view_with_prices(items_price,items_name); break;
             case 5:  receipt(items_price,items_name); break;
-            case 6:  delete1(); cout<<"Thank you for shopping"<<endl; break;
+            case 6:  receipt(items_price,items_name); delete1(); cout<<"Thank you for shopping"<<endl; break;
             default: cout<<"Invalid input! Try again."<<endl;
          }
 
@@ -85,6 +85,7 @@ public:
 
    void view_with_prices(double items_price[], string items_name[]){
       cout<<"-------------------------------------------------"<<endl;
+      cout<<"LIST"<<endl;
       for(int i=0 ; i<qty;i++){
          cout<<i<<"."<<"Item name:  "<<items_name[i]<<endl;
          cout<<i<<"."<<"Item price: "<<items_price[i]<<endl;
@@ -98,17 +99,21 @@ public:
       for(int i=count ; i<qty;i++){
       cout<<"Enter "<<i<<" Item name: ";
       getline(cin,items_name[i]);
+      cin.ignore();
       cout<<"Enter Item Price: ";
-      count++;
       cin>>items_price[i];
+      cin.ignore();
+      count++;
       cout<<endl;
       }
    }
 
    void retreive(string items_name[]){
+      cout<<endl;
       for(int i=0 ; i<qty;i++){
          cout<<i<<"."<<items_name[i]<<endl;
       }
+      cout<<endl;
    }
 
    void receipt(double items_price[], string items_name[]){
@@ -121,7 +126,7 @@ public:
       cout<<"S.No \t Items Name \t Item price"<<endl;
       cout<<"-----------------------------------------"<<endl;
       for(int i=0 ; i<qty;i++){
-         cout<<i<<"\t"<<items_name[i]<<"\t"<<items_price[i]<<endl;
+         cout<<i<<"\t"<<items_name[i]<<"\t\t\t"<<items_price[i]<<endl;
       }
       cout<<"-----------------------------------------"<<endl;
       cout<<"Total Items: "<<qty<<"\tTotal Price:  "<<total<<endl;
