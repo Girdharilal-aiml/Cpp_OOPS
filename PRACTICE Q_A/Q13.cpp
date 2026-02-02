@@ -54,7 +54,14 @@ public:
       return UPD_S_NT;
     }
 
-    
+    void display_Normal(){
+      cout<<"Name : "<<name<<endl;
+      cout<<"Monthly Salary : "<<M_salary<<endl;
+      cout<<"Tax percentage : "<<Tax_percent<<endl;
+      cout<<"Updated Salary after 2%% tax : "<<updated_salary<<endl;
+    }
+
+   
 
 };
 
