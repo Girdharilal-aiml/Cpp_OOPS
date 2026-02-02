@@ -34,7 +34,9 @@ public:
       updated_salary = M_salary - (M_salary * Tax_percent);
       UPD_S_NT = M_salary - (M_salary * new_tax);
     }
-    
+    void update_tax_percentage(double tax){
+      new_tax = tax/100;
+    }
 
     
     
