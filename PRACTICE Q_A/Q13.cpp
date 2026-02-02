@@ -77,6 +77,12 @@ int main(){
     E1.get_data("Girdhari lal",100000);
     //E1.display_Normal();
 
-    
+    E1.Display_new();
+    cout<<"==================================================="<<endl;
+    E1.update_tax_percentage(3);
+    E1.Display_new();
+    cout<<"==================================================="<<endl;
+
+
 
 }
