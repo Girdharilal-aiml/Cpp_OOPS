@@ -47,6 +47,9 @@ public:
     double settax(){
       return new_tax;
     }
+    double Salary_after_tax(){
+      return updated_salary;
+    }
     
 
     
