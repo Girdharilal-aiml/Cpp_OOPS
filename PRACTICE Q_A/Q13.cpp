@@ -14,4 +14,22 @@
      Recalculate and display updated salary after tax.
 */
 
-#i
+#include"iostream"
+using namespace std;
+
+class Employee{
+private: 
+    string name;
+    double M_salary;
+    double Tax_percent;
+    double new_tax;
+    double updated_salary;
+    double UPD_S_NT;
+
+public:
+
+};
+
+int main(){
+   
+}
