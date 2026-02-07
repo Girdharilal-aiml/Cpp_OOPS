@@ -14,7 +14,7 @@
      Recalculate and display updated salary after tax.
 */
 
-#include"iostream"
+#include <iostream>
 using namespace std;
 
 class Employee{
@@ -29,9 +29,9 @@ private:
 public:
     void get_data(string n, double sal){
       name = n;
-      new_tax = Tax_percent;
       M_salary = sal;
       Tax_percent = 0.02;
+      new_tax = Tax_percent;
       updated_salary = M_salary - (M_salary * Tax_percent);
       UPD_S_NT = M_salary - (M_salary * new_tax);
     }
@@ -59,17 +59,17 @@ public:
     void display_Normal(){
       cout<<"Name : "<<name<<endl;
       cout<<"Monthly Salary : "<<M_salary<<endl;
-      cout<<"Tax percentage : "<<Tax_percent<<endl;
+      cout<<"Tax percentage : "<<Tax_percent * 100<<endl;
       cout<<"Updated Salary after 2%% tax : "<<updated_salary<<endl;
     }
 
     void Display_new(){
       cout<<"Name : "<<name<<endl;
       cout<<"Monthly Salary : "<<M_salary<<endl;
-      cout<<"Tax percentage : "<<Tax_percent<<endl;
-      cout<<"Updated Salary after %2 tax : "<<updated_salary<<endl;
-      cout<<"Updated Tax % : "<<new_tax<<endl;
-      cout<<"Updated Salary after %"<<new_tax<<" tax : "<<UPD_S_NT<<endl;
+      cout<<"Tax percentage : "<<Tax_percent * 100<<endl;
+      cout<<"Updated Salary after 2%% tax : "<<updated_salary<<endl;
+      cout<<"Updated Tax %% : "<<new_tax * 100<<endl;
+      cout<<"Updated Salary after "<<new_tax * 100<<"%% tax : "<<UPD_S_NT<<endl;
     }
 
 };
@@ -83,7 +83,4 @@ int main(){
     E1.Display_new();
     cout<<"==================================================="<<endl;
     E1.display_Normal();
-
-
-
 }
