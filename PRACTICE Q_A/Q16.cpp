@@ -17,10 +17,11 @@ using namespace std;
 
 class WeekDays{
 private:
-   string Days;
+   string* Days;
+   int CurrentDay;
 public:
    WeekDays(){
-      
+      Days = new string[7];
    }
 
 };
