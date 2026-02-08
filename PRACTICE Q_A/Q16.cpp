@@ -32,7 +32,9 @@ public:
       CurrentDay = Days[n];
       return CurrentDay;
    }
-
+   string getNextDay();
+   string getPreviousDay();
+   string getNthDayFromToday(int N);
 
 
 };
