@@ -11,3 +11,15 @@
    - getPreviousDay() → return yesterday’s name
    - getNthDayFromToday(N) → return day after N days
 */
+
+#include"iostream"
+using namespace std;
+
+class WeekDays{
+private:
+public:
+};
+
+int main(){
+
+}
