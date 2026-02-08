@@ -23,6 +23,15 @@ public:
    WeekDays(){
       Days = new string[7];
    }
+   WeekDays(string Days, int CurrentDays){
+      this->CurrentDay = CurrentDay;
+      this->Days = Days;
+   }
+   string getCurrentDay(){
+      return CurrentDay;
+   }
+   
+
 
 };
 
