@@ -17,7 +17,12 @@ using namespace std;
 
 class WeekDays{
 private:
+   string Days;
 public:
+   WeekDays(){
+      
+   }
+
 };
 
 int main(){
