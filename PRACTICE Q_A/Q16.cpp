@@ -25,12 +25,14 @@ public:
    }
    WeekDays(string Days, int CurrentDays){
       this->CurrentDay = CurrentDay;
-      this->Days = Days;
+      this->Days = Days[];
    }
+   int n;
    string getCurrentDay(){
+      CurrentDay = Days[n];
       return CurrentDay;
    }
-   
+
 
 
 };
