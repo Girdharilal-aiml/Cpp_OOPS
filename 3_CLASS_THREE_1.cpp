@@ -16,7 +16,18 @@ class CopyConstructor{
     }
 };
 
+class ShallowCopy{
+    public:
+    int* data;
 
+    ShallowCopy(int bal){
+        data = new int (bal);
+    }
+    void displayDetails(){
+        cout <<  "Value: " << data << endl;
+        cout << "Address: " << &data << endl;
+    }
+};
 
 
 int main(){
