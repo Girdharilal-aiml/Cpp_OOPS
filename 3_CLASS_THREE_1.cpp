@@ -29,6 +29,19 @@ class ShallowCopy{
     }
 };
 
+class DeepCopy{
+    public:
+    int* data;
+
+    DeepCopy(int bal){
+        data = new int (bal);
+    }
+    DeepCopy(DeepCopy &obj){
+        data = new int(*obj.data);
+    }
+
+    
+};
 
 int main(){
     cout << "Copy Constructor" << endl;
