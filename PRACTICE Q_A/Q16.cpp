@@ -19,6 +19,7 @@ class WeekDays{
 private:
    string Days[7];
    int CurrentDay;
+
    void fillDays(){
      Days[0] = "Sunday";
      Days[1] = "Monday";
@@ -39,6 +40,10 @@ public:
    WeekDays(int day){
      fillDays();
      CurrentDay = day % 7; 
+   }
+
+   string getCurrentDay(){
+     return Days[CurrentDay];
    }
 
    
