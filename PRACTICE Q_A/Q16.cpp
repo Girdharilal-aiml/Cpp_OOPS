@@ -54,10 +54,14 @@ public:
      return Days[(CurrentDay + 6) % 7];
    }
 
-   
+   string getNthDayFromToday(int N){
+        return Days[(CurrentDay + N) % 7];
+   }
 };
 
 int main(){
+
+   WeekDays W1(1);
 
    
 
