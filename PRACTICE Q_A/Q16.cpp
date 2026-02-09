@@ -12,33 +12,21 @@
    - getNthDayFromToday(N) → return day after N days
 */
 
-#include"iostream"
+#include <iostream>
 using namespace std;
 
 class WeekDays{
 private:
-   string* Days;
+   string Days[7];
    int CurrentDay;
-public:
-   WeekDays(){
-      Days = new string[7];
-   }
-   WeekDays(string Days, int CurrentDays){
-      this->CurrentDay = CurrentDay;
-      this->Days = Days[];
-   }
-   int n;
-   string getCurrentDay(){
-      CurrentDay = Days[n];
-      return CurrentDay;
-   }
-   string getNextDay();
-   string getPreviousDay();
-   string getNthDayFromToday(int N);
 
+
+public:
 
 };
 
 int main(){
+
+   
 
 }
