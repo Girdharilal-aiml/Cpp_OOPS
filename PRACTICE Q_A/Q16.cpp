@@ -60,8 +60,15 @@ public:
 };
 
 int main(){
+   int today, N;
 
-   WeekDays W1(1);
+   cout << "Enter today (0=Sun,1=Mon,...6=Sat): ";
+   cin >> today;
+
+   WeekDays W1(today);
+
+   cout << "Enter N days from today: ";
+   cin >> N;
 
    cout << "Today: " << W1.getCurrentDay() << endl;
    cout << "Tomorrow: " << W1.getNextDay() << endl;
