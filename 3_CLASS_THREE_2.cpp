@@ -31,3 +31,8 @@ class SharedAccount{
         cout << "[Shallow] Address: " << balance << endl;
     }
 };
+
+class SecureAccount{
+    
+};
+//#endif
