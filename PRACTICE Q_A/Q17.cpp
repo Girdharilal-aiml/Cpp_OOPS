@@ -33,11 +33,15 @@ public:
       this->type = type;
    }
 
+   void show(){
+    cout << "Device: " << DeviceName << endl;
+    cout << "Type: " << type << endl;
+    cout << "Status: " << (Status ? "ON" : "OFF") << endl;
+   }
+
    ~SmartDevice(){
     cout << type << " (" << DeviceName << ") is powering down... Goodbye!\n";
    }
-
-
 };
 
 int main(){
