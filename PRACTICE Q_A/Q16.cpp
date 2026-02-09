@@ -46,6 +46,14 @@ public:
      return Days[CurrentDay];
    }
 
+   string getNextDay(){
+     return Days[(CurrentDay + 1) % 7];
+   }
+
+   string getPreviousDay(){
+     return Days[(CurrentDay + 6) % 7];
+   }
+
    
 };
 
