@@ -70,6 +70,16 @@ int main(){
     c4.displayDetails();
     cout << endl;
 
-    
+    cout << "Deep Copy Constructor" << endl;
+    cout << "=================================================" << endl;
+    CopyConstructor c5(10);
+    c5.displayDetails();
+    CopyConstructor c6 = c5;
+    c6.displayDetails();
+    cout << "Modifying c5.data....." << endl;
+    *c5.data = 25;
+    cout << "Displaying c6.data....." << endl;
+    c6.displayDetails();
+    cout << endl;
     
 }
