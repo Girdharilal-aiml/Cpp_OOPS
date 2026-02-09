@@ -39,7 +39,17 @@ int main(){
     c2.displayDetails();
     cout << endl;
 
-    
+    cout << "Shallow Copy Constructor" << endl;
+    cout << "=================================================" << endl;
+    CopyConstructor c3(10);
+    c3.displayDetails();
+    CopyConstructor c4 = c3;
+    c4.displayDetails();
+    cout << "Modifying c3.data....." << endl;
+    *c3.data = 25;
+    cout << "Displaying c4.data....." << endl;
+    c4.displayDetails();
+    cout << endl;
 
     
     
