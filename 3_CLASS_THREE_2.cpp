@@ -17,5 +17,17 @@ class SharedAccount{
     SharedAccount(SharedAccount &obj){
         balance = obj.balance;
     }
-    
+    void withDraw(double amount){
+        if(amount > 0 && amount <= *balance){
+            *balance -= amount;
+            cout << "[Shallow] Amount Withdrawn Successfully..." << endl;
+        }
+        else{
+            cout << "Invalid Amount: " << endl;
+        }
+    }
+    void displayDetails(){
+        cout << "[Shallow] Balance: " << *balance << endl;
+        cout << "[Shallow] Address: " << balance << endl;
+    }
 };
