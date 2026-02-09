@@ -4,7 +4,16 @@
 using namespace std;
 
 class CopyConstructor{
-  
+    public:
+    int data;
+    CopyConstructor(int bal){
+        data = bal;
+    }
+         
+    void displayDetails(){
+        cout <<  "Value: " << data << endl;
+        cout << "Address: " << &data << endl;
+    }
 };
 
 
