@@ -20,5 +20,16 @@ class CopyConstructor{
 
 
 int main(){
+    cout << "Copy Constructor" << endl;
+    cout << "=================================================" << endl;
+    CopyConstructor c1(10);
+    c1.displayDetails();
+    CopyConstructor c2 = c1;
+    c2.displayDetails();
+    cout << endl;
+
+    
+
+    
     
 }
