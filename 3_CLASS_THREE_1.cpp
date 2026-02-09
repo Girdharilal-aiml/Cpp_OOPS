@@ -40,7 +40,13 @@ class DeepCopy{
         data = new int(*obj.data);
     }
 
-    
+    void displayDetails(){
+        cout <<  "Value: " << data << endl;
+        cout << "Address: " << &data << endl;
+    }
+    ~DeepCopy(){
+        delete data;
+    }
 };
 
 int main(){
