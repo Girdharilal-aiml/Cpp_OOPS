@@ -63,6 +63,9 @@ int main(){
 
    WeekDays W1(1);
 
-   
+   cout << "Today: " << W1.getCurrentDay() << endl;
+   cout << "Tomorrow: " << W1.getNextDay() << endl;
+   cout << "Yesterday: " << W1.getPreviousDay() << endl;
+   cout << "After 20 days: " << W1.getNthDayFromToday(20) << endl;
 
 }
