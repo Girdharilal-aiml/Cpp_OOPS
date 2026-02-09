@@ -46,4 +46,16 @@ public:
 
 int main(){
 
+   SmartDevice d1("Living Room Light","Smart Light",true);
+   d1.show();
+
+   {
+   SmartDevice d2("RoboCleaner","Robo Vacuum",false);
+   d2.show();
+   }
+
+   SmartDevice *d3 = new SmartDevice("CoffeeBot","Coffee Maker",true);
+   d3->show();
+
+   delete d3;
 }
