@@ -16,6 +16,13 @@
 #include"iostream"
 using namespace std;
 
+class FootballPlayer{
+private:
+    
+public:
+
+};
+
 int main(){
 
   return 0;
