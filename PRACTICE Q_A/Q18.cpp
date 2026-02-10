@@ -20,7 +20,17 @@ private:
    string name;
    double jerseyNumber;
    double BattingAverage;
+
 public:
+   int runs, runsScored;
+
+   CricketPlayer(string name, double jerseyNumber, double BattingAverage){
+      this->name = name;
+      this->jerseyNumber = jerseyNumber;
+      this->BattingAverage = BattingAverage;
+   }
+
+   
 
 };
 
