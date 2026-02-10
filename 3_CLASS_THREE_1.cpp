@@ -65,7 +65,7 @@ int main(){
     CopyConstructor c4 = c3;
     c4.displayDetails();
     cout << "Modifying c3.data....." << endl;
-    *c3.data = 25;
+    c3.data = 25;
     cout << "Displaying c4.data....." << endl;
     c4.displayDetails();
     cout << endl;
@@ -77,7 +77,7 @@ int main(){
     CopyConstructor c6 = c5;
     c6.displayDetails();
     cout << "Modifying c5.data....." << endl;
-    *c5.data = 25;
+    c5.data = 25;
     cout << "Displaying c6.data....." << endl;
     c6.displayDetails();
     cout << endl;
