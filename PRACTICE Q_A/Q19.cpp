@@ -57,11 +57,18 @@ public:
         cout << "Goals: " << goalCount << endl;
         cout << "------------------------" << endl;
     }
-
-
 };
 
 int main(){
+  FootballPlayer p1;
+  p1.displayProfile();
+  
+  FootballPlayer p2("Lionel Messi", "Forward", 820);
+  p2.displayProfile();
+
+  FootballPlayer p3("Kevin De Bruyne");
+  p3.displayProfile();
+
   
 
   return 0;
