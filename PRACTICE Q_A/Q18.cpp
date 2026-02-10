@@ -63,7 +63,17 @@ int main() {
     CricketPlayer rizwan("Muhammad Rizwan", 16, 48.0);
     CricketPlayer saim("Saim Ayub", 63, 35.0);
 
-    
+    babar.playMatch(80);
+    rizwan.playMatch(60);
+    saim.playMatch(45);
+
+    babar.improveAverage(70).improveAverage(90);
+    rizwan.improveAverage(50).improveAverage(40);
+    saim.improveAverage(30).improveAverage(60);
+
+    babar.displayPlayerStats();
+    rizwan.displayPlayerStats();
+    saim.displayPlayerStats();
 
     return 0;
 }
