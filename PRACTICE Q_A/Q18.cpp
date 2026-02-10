@@ -11,3 +11,17 @@
    - displayPlayerStats() → show player info
    - Test with players: Babar Azam, Muhammad Rizwan, Saim Ayub
 */
+
+#include"iostream"
+using namespace std;
+
+class CricketPlayer{
+private:
+   
+public:
+
+};
+
+int main(){
+
+}
