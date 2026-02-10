@@ -59,6 +59,10 @@ public:
 
 int main() {
 
+    CricketPlayer babar("Babar Azam", 56, 50.0);
+    CricketPlayer rizwan("Muhammad Rizwan", 16, 48.0);
+    CricketPlayer saim("Saim Ayub", 63, 35.0);
+
     
 
     return 0;
