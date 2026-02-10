@@ -12,34 +12,33 @@
    - Test with players: Babar Azam, Muhammad Rizwan, Saim Ayub
 */
 
-#include"iostream"
+#include <iostream>
 using namespace std;
 
-class CricketPlayer{
+class CricketPlayer {
 private:
    string name;
-   double jerseyNumber;
-   double BattingAverage;
+   int jerseyNumber;
+   double battingAverage;
+   int totalRuns;
+   int matches;
 
 public:
-   int runs, runsScored;
-   double average;
 
-   CricketPlayer(string name, double jerseyNumber, double BattingAverage){
+   CricketPlayer(string name, int jerseyNumber, double battingAverage) {
       this->name = name;
       this->jerseyNumber = jerseyNumber;
-      this->BattingAverage = BattingAverage;
+      this->battingAverage = battingAverage;
+
+      totalRuns = battingAverage;
+      matches = 1;
    }
-
-   double improveAverage(int r){
-      average = runsScored/r;
-      return average;
-   }
-
-   
-
+    
 };
 
-int main(){
+int main() {
 
+    
+
+    return 0;
 }
