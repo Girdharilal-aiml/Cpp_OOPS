@@ -41,7 +41,11 @@ public:
       return *this; 
    }
 
-   
+   void playMatch(int runsScored) {
+      totalRuns += runsScored;
+      matches++;
+      battingAverage = (double) totalRuns / matches;
+   }
 
     
 };
