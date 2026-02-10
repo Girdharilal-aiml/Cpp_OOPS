@@ -12,3 +12,11 @@
      position = "Midfielder", goalCount = 10
    - Create players, update goals, and display profiles
 */
+
+#include"iostream"
+using namespace std;
+
+int main(){
+
+  return 0;
+}
