@@ -17,37 +17,44 @@ using namespace std;
 
 class CricketPlayer {
 private:
-   string name;
-   int jerseyNumber;
-   double battingAverage;
-   int totalRuns;
-   int matches;
+    string name;
+    int jerseyNumber;
+    double battingAverage;
+    int totalRuns;
+    int matches;
 
 public:
 
-   CricketPlayer(string name, int jerseyNumber, double battingAverage) {
-      this->name = name;
-      this->jerseyNumber = jerseyNumber;
-      this->battingAverage = battingAverage;
+    CricketPlayer(string name, int jerseyNumber, double battingAverage) {
+        this->name = name;
+        this->jerseyNumber = jerseyNumber;
+        this->battingAverage = battingAverage;
 
-      totalRuns = battingAverage;
-      matches = 1;
-   }
+        totalRuns = battingAverage;
+        matches = 1;
+    }
 
-   CricketPlayer& improveAverage(int runs) {
-      totalRuns += runs;
-      matches++;
-      battingAverage = (double) totalRuns / matches;
-      return *this; 
-   }
+    CricketPlayer& improveAverage(int runs) {
+        totalRuns += runs;
+        matches++;
+        battingAverage = (double) totalRuns / matches;
+        return *this; 
+    }
 
-   void playMatch(int runsScored) {
-      totalRuns += runsScored;
-      matches++;
-      battingAverage = (double) totalRuns / matches;
-   }
+    void playMatch(int runsScored) {
+        totalRuns += runsScored;
+        matches++;
+        battingAverage = (double) totalRuns / matches;
+    }
 
-    
+    void displayPlayerStats() {
+        cout << "Name: " << name << endl;
+        cout << "Jersey Number: " << jerseyNumber << endl;
+        cout << "Batting Average: " << battingAverage << endl;
+        cout << "Total Runs: " << totalRuns << endl;
+        cout << "Matches Played: " << matches << endl;
+        cout << "-------------------------" << endl;
+    }
 };
 
 int main() {
