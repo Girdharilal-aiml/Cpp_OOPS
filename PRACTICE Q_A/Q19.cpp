@@ -41,6 +41,23 @@ public:
         goalCount = goals;
     }
 
+    FootballPlayer(const FootballPlayer &p) {
+        PlayerName = p.PlayerName;
+        position = p.position;
+        goalCount = p.goalCount;
+    }
+
+    void scoreGoal(int goals) {
+        goalCount += goals;
+    }
+
+    void displayProfile() {
+        cout << "Player Name: " << playerName << endl;
+        cout << "Position: " << position << endl;
+        cout << "Goals: " << goalCount << endl;
+        cout << "------------------------" << endl;
+    }
+
 
 };
 
