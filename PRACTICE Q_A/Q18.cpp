@@ -23,11 +23,17 @@ private:
 
 public:
    int runs, runsScored;
+   double average;
 
    CricketPlayer(string name, double jerseyNumber, double BattingAverage){
       this->name = name;
       this->jerseyNumber = jerseyNumber;
       this->BattingAverage = BattingAverage;
+   }
+
+   double improveAverage(int r){
+      average = runsScored/r;
+      return average;
    }
 
    
