@@ -28,12 +28,19 @@ public:
       position = "Benchwarmer";
       goalCount = 0;
     }
-    
-    FootballPlayer(string Playername){
-      this->goalCount = 10;
-      this->PlayerName = PlayerName;
-      this->position = "Midfielder";
+
+    FootballPlayer(string name, string pos, int goals) {
+        PlayerName = name;
+        position = pos;
+        goalCount = goals;
     }
+
+    FootballPlayer(string name, string pos = "Midfielder", int goals = 10) {
+        PlayerName = name;
+        position = pos;
+        goalCount = goals;
+    }
+
 
 };
 
