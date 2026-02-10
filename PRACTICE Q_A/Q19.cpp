@@ -18,8 +18,15 @@ using namespace std;
 
 class FootballPlayer{
 private:
-    
+    string Playername;
+    int goalcount;
+    string position;
 public:
+    FootballPlayer(string Playername, int goalcount, string position){
+      this->goalcount = goalcount;
+      this->Playername = Playername;
+      this->position = position;
+    }
 
 };
 
