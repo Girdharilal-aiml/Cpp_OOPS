@@ -15,65 +15,64 @@
 #include <iostream>
 using namespace std;
 
-class CricketPlayer {
+class CricketPlayer{
 private:
-    string name;
-    int jerseyNumber;
-    double battingAverage;
-    int totalRuns;
-    int matches;
+   string name;
+   int jerseyNumber;
+   double battingAverage;
+   int totalRuns;
+   int matches;
 
 public:
+   CricketPlayer(string name, int jerseyNumber, double battingAverage){
+      this->name = name;
+      this->jerseyNumber = jerseyNumber;
+      this->battingAverage = battingAverage;
 
-    CricketPlayer(string name, int jerseyNumber, double battingAverage) {
-        this->name = name;
-        this->jerseyNumber = jerseyNumber;
-        this->battingAverage = battingAverage;
+      totalRuns = battingAverage;
+      matches = 1;
+   }
 
-        totalRuns = battingAverage;
-        matches = 1;
-    }
+   CricketPlayer& improveAverage(int runs){
+      totalRuns += runs;
+      matches++;
+      battingAverage = (double) totalRuns / matches;
+      return *this; 
+   }
 
-    CricketPlayer& improveAverage(int runs) {
-        totalRuns += runs;
-        matches++;
-        battingAverage = (double) totalRuns / matches;
-        return *this; 
-    }
+   void playMatch(int runsScored){
+      totalRuns += runsScored;
+      matches++;
+      battingAverage = (double) totalRuns / matches;
+   }
 
-    void playMatch(int runsScored) {
-        totalRuns += runsScored;
-        matches++;
-        battingAverage = (double) totalRuns / matches;
-    }
-
-    void displayPlayerStats() {
-        cout << "Name: " << name << endl;
-        cout << "Jersey Number: " << jerseyNumber << endl;
-        cout << "Batting Average: " << battingAverage << endl;
-        cout << "Total Runs: " << totalRuns << endl;
-        cout << "Matches Played: " << matches << endl;
-        cout << "-------------------------" << endl;
-    }
+   void displayPlayerStats(){
+      cout << "Name: " << name << endl;
+      cout << "Jersey Number: " << jerseyNumber << endl;
+      cout << "Batting Average: " << battingAverage << endl;
+      cout << "Total Runs: " << totalRuns << endl;
+      cout << "Matches Played: " << matches << endl;
+      cout << "-------------------------" << endl;
+   }
 };
 
-int main() {
+int main(){
 
-    CricketPlayer babar("Babar Azam", 56, 50.0);
-    CricketPlayer rizwan("Muhammad Rizwan", 16, 48.0);
-    CricketPlayer saim("Saim Ayub", 63, 35.0);
+   CricketPlayer babar("Babar Azam", 56, 50.0);
+   CricketPlayer rizwan("Muhammad Rizwan", 16, 48.0);
+   CricketPlayer saim("Saim Ayub", 63, 35.0);
 
-    babar.playMatch(80);
-    rizwan.playMatch(60);
-    saim.playMatch(45);
+   babar.playMatch(80);
+   rizwan.playMatch(60);
+   saim.playMatch(45);
 
-    babar.improveAverage(70).improveAverage(90);
-    rizwan.improveAverage(50).improveAverage(40);
-    saim.improveAverage(30).improveAverage(60);
+   babar.improveAverage(70).improveAverage(90);
+   rizwan.improveAverage(50).improveAverage(40);
+   saim.improveAverage(30).improveAverage(60);
 
-    babar.displayPlayerStats();
-    rizwan.displayPlayerStats();
-    saim.displayPlayerStats();
+   babar.displayPlayerStats();
+   rizwan.displayPlayerStats();
+   saim.displayPlayerStats();
 
-    return 0;
+   return 0;
 }
