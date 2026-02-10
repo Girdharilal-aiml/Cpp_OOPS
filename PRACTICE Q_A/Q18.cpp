@@ -33,6 +33,16 @@ public:
       totalRuns = battingAverage;
       matches = 1;
    }
+
+   CricketPlayer& improveAverage(int runs) {
+      totalRuns += runs;
+      matches++;
+      battingAverage = (double) totalRuns / matches;
+      return *this; 
+   }
+
+   
+
     
 };
 
