@@ -17,7 +17,9 @@ using namespace std;
 
 class CricketPlayer{
 private:
-   
+   string name;
+   double jerseyNumber;
+   double BattingAverage;
 public:
 
 };
