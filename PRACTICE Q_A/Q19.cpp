@@ -13,26 +13,21 @@
    - Create players, update goals, and display profiles
 */
 
-#include"iostream"
+#include <iostream>
 using namespace std;
 
-class FootballPlayer{
+class FootballPlayer {
 private:
     string PlayerName;
     int goalCount;
     string position;
+
 public:
 
     FootballPlayer() {
-      PlayerName = "Unknown Player";
-      position = "Benchwarmer";
-      goalCount = 0;
-    }
-
-    FootballPlayer(string name, string pos, int goals) {
-        PlayerName = name;
-        position = pos;
-        goalCount = goals;
+        PlayerName = "Unknown Player";
+        position = "Benchwarmer";
+        goalCount = 0;
     }
 
     FootballPlayer(string name, string pos = "Midfielder", int goals = 10) {
@@ -52,7 +47,7 @@ public:
     }
 
     void displayProfile() {
-        cout << "Player Name: " << playerName << endl;
+        cout << "Player Name: " << PlayerName << endl;
         cout << "Position: " << position << endl;
         cout << "Goals: " << goalCount << endl;
         cout << "------------------------" << endl;
@@ -60,16 +55,25 @@ public:
 };
 
 int main(){
-  FootballPlayer p1;
-  p1.displayProfile();
-  
-  FootballPlayer p2("Lionel Messi", "Forward", 820);
-  p2.displayProfile();
 
-  FootballPlayer p3("Kevin De Bruyne");
-  p3.displayProfile();
+    FootballPlayer p1;
+    p1.displayProfile();
 
-  
+    FootballPlayer p2("Lionel Messi", "Forward", 820);
+    p2.displayProfile();
 
-  return 0;
+    FootballPlayer p3("Kevin De Bruyne");
+    p3.displayProfile();
+
+    FootballPlayer p4 = p2; 
+    p4.displayProfile();
+
+    p2.scoreGoal(5);
+    p3.scoreGoal(3);
+
+    cout << "\nAfter Scoring Goals:\n";
+    p2.displayProfile();
+    p3.displayProfile();
+
+    return 0;
 }
