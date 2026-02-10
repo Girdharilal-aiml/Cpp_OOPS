@@ -22,10 +22,13 @@ private:
     int goalcount;
     string position;
 public:
-    FootballPlayer(string Playername, int goalcount, string position){
-      this->goalcount = goalcount;
+    FootballPlayer(){
+
+    }
+    FootballPlayer(string Playername){
+      this->goalcount = 10;
       this->Playername = Playername;
-      this->position = position;
+      this->position = "Midfielder";
     }
 
 };
