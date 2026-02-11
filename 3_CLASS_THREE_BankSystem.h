@@ -43,7 +43,19 @@ class SecureAccount{
     SecureAccount(SecureAccount &obj){
         balance = new double(*obj.balance);
     }
-    
+    void withDraw(double amount){
+        if (amount > 0 && amount <= *balance){
+            *balance -= amount;
+            cout << "[Deep] Amount Withdrawn  Successfully..." << endl;
+        }
+        else{
+            cout << "Invalid Amount: " << endl;
+        }
+    }
+    void displayDetails(){
+        cout << "[Deep] Balance: " << *balance << endl;
+        cout << "[Deep] Address: " << balance << endl;
+    }
     
 };
 //#endif
