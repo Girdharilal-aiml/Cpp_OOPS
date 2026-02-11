@@ -44,6 +44,8 @@ int main(){
     S3.displayDetails();
     cout << "=====================================================================================" << endl;
     
-
+    cout << "Checking the balance of Secure Account S4 after withdrawl from Secure Account S3" << endl;
+    S4.displayDetails();
+    cout << "=====================================================================================" << endl;
 }
 
