@@ -20,6 +20,10 @@ int main(){
     S1.withDraw(500.00);
     cout << "=====================================================================================" << endl;
 
+    cout << "Checking the balance of Shared Account S2 after withdrawal from Shared Account S1" << endl;
+    S2.displayDetails();
+    cout << "=====================================================================================" << endl;
+
 
 }
 
