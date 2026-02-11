@@ -54,7 +54,7 @@ class SecureAccount{
     }
     void displayDetails(){
         cout << "[Deep] Balance: " << *balance << endl;
-        cout << "[Shallow] Address: " << balance << endl;
+        cout << "[Deep] Address: " << balance << endl;
     }
     
 };
