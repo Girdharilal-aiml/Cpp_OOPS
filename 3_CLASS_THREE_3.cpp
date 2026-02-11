@@ -40,6 +40,10 @@ int main(){
     S3.withDraw(500.00);
     cout << "=====================================================================================" << endl;
 
+    cout << "Checking the balance of Secure Account S3 after withdrawl" << endl;
+    S3.displayDetails();
+    cout << "=====================================================================================" << endl;
+    
 
 }
 
