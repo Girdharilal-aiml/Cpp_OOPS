@@ -36,6 +36,13 @@ class SecureAccount{
     public:
     double* balance;
 
+    SecureAccount(double bal){
+        balance = new double(bal);
+        cout << "[Deep] Secure Account Created..." << endl;
+    }
+    SecureAccount(SecureAccount &obj){
+        balance = new double(*obj.balance);
+    }
     
     
 };
