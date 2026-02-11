@@ -10,5 +10,12 @@ class SharedAccount{
     public:
     double* balance;
 
+    SharedAccount(double bal){
+        balance = new double(bal);
+        cout << "[Shallow] Shared Account Created..." << endl;
+    }
+    SharedAccount(SharedAccount &obj){
+        balance = obj.balance;
+    }
     
 };
