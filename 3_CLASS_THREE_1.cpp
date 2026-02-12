@@ -24,8 +24,8 @@ class ShallowCopy{
         data = new int (bal);
     }
     void displayDetails(){
-        cout <<  "Value: " << data << endl;
-        cout << "Address: " << &data << endl;
+        cout <<  "Value: " << *data << endl;
+        cout << "Address: " << data << endl;
     }
 };
 
