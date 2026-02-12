@@ -41,8 +41,8 @@ class DeepCopy{
     }
 
     void displayDetails(){
-        cout <<  "Value: " << data << endl;
-        cout << "Address: " << &data << endl;
+        cout <<  "Value: " << *data << endl;
+        cout << "Address: " << data << endl;
     }
     ~DeepCopy(){
         delete data;
