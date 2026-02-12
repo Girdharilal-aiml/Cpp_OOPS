@@ -10,5 +10,6 @@ Deep → Separate memory
 Inheritance → Parent → Child
 Override → Child changes behavior
 Virtual → Runtime decision
+Polymorphism → One call, many behaviors
 
 */
