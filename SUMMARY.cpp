@@ -5,5 +5,6 @@ Encapsulation → Data safe
 Constructor → Birth
 Destructor → Death
 Copy → Clone
+Shallow → Shared memory
 
 */
