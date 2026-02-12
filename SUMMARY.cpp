@@ -7,5 +7,6 @@ Destructor → Death
 Copy → Clone
 Shallow → Shared memory
 Deep → Separate memory
+Inheritance → Parent → Child
 
 */
