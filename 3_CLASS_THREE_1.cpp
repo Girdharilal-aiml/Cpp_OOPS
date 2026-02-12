@@ -74,7 +74,7 @@ int main(){
     cout << "=================================================" << endl;
     DeepCopy c5(10);
     c5.displayDetails();
-    CopyConstructor c6 = c5;
+    DeepCopy c6 = c5;
     c6.displayDetails();
     cout << "Modifying c5.data....." << endl;
     c5.data = 25;
