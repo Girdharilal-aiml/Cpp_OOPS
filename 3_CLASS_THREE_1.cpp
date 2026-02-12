@@ -65,7 +65,7 @@ int main(){
     ShallowCopy c4 = c3;
     c4.displayDetails();
     cout << "Modifying c3.data....." << endl;
-    c3.data = 25;
+    *c3.data = 25;
     cout << "Displaying c4.data....." << endl;
     c4.displayDetails();
     cout << endl;
