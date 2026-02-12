@@ -60,9 +60,9 @@ int main(){
 
     cout << "Shallow Copy Constructor" << endl;
     cout << "=================================================" << endl;
-    CopyConstructor c3(10);
+    ShallowCopy c3(10); 
     c3.displayDetails();
-    CopyConstructor c4 = c3;
+    ShallowCopy c4 = c3;
     c4.displayDetails();
     cout << "Modifying c3.data....." << endl;
     c3.data = 25;
