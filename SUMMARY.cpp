@@ -9,5 +9,6 @@ Shallow → Shared memory
 Deep → Separate memory
 Inheritance → Parent → Child
 Override → Child changes behavior
+Virtual → Runtime decision
 
 */
