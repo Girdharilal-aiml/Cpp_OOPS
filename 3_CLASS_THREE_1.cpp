@@ -72,7 +72,7 @@ int main(){
 
     cout << "Deep Copy Constructor" << endl;
     cout << "=================================================" << endl;
-    CopyConstructor c5(10);
+    DeepCopy c5(10);
     c5.displayDetails();
     CopyConstructor c6 = c5;
     c6.displayDetails();
