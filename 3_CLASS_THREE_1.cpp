@@ -78,6 +78,8 @@ int main(){
     c6.displayDetails();
     cout << "Modifying c5.data....." << endl;
     *c5.data = 25;
+    cout << "Displaying c5.data....." << endl;
+    c5.displayDetails(); 
     cout << "Displaying c6.data....." << endl;
     c6.displayDetails();
     cout << endl;
