@@ -111,3 +111,20 @@ public:
 
     bool withdraw(double amount) override{
         if(balance - amount >= -overdraftLimit){
+            balance -= amount;
+            return true;
+        }
+        return false;
+    }
+
+    void calculateInterest() override{
+        // No interest for current account
+    }
+
+    void displayInfo() override{
+        Account::displayInfo();
+        cout << "Type: Current\nOverdraft Limit: " << overdraftLimit << endl;
+    }
+};
+
+class FixedAccount : public Account{
