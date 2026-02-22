@@ -44,3 +44,8 @@ public:
 
     string getName() const{ return name; }
 };
+
+class Library {
+private:
+    string LibraryName;
+
