@@ -11,3 +11,8 @@ private:
     // STATIC DATA MEMBER: Shared by all objects
     static int totalBooksCount;
 
+public:
+    Book(string t, string i) : title(t), isbn(i){
+        totalBooksCount++;
+    }
+
