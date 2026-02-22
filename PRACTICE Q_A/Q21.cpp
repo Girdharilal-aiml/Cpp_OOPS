@@ -128,3 +128,10 @@ public:
 };
 
 class FixedAccount : public Account{
+    int lockPeriod;
+    double InterestRATE;
+
+public:
+    FixedAccount(int acc, string n, double bal, int months, double rate) : Account(acc, n, bal), lockPeriod(months), InterestRATE(rate) {}
+    
+    bool withdraw(double amount) override{
