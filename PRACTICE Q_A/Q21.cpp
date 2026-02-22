@@ -84,3 +84,16 @@ class SavingAccount : public Account{
 
 public:
     SavingAccount(int acc, string n, double bal, double IR) : Account(acc, n, bal), interestRate(IR) {}
+
+    bool withdraw(double amount) override{
+        if (balance - amount >= 1000){
+            balance -= amount;
+            return true;
+        }
+        return false;
+    }
+
+    void calculateInterest() override {
+        balance += balance * interestRate;
+    }
+
