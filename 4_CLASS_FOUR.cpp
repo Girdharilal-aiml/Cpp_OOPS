@@ -106,3 +106,14 @@ public:
     }
 };
 
+int main(){
+    // 1. Create Members (Allocated on stack, independent of Library)
+    Member Girdhari("Girdhari lal", 101);
+    Member mrGLAL("Mr. GLAL", 102);
+
+    cout << "--- Program Start ---" << endl;
+
+    {
+        // 2. Create Library
+        Library ciytlab("FAST NUCES");
+
