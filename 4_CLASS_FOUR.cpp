@@ -24,3 +24,9 @@ public:
         return totalBooksCount;
     }
 
+    ~Book(){
+        totalBooksCount--;
+        cout << "   [System] Destructor called for Book: " << title << endl;
+    }
+
+};
