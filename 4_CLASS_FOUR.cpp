@@ -30,3 +30,7 @@ public:
     }
 
 };
+
+// Initialize static member
+int Book::totalBooksCount = 0;
+
