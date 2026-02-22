@@ -132,3 +132,11 @@ int main(){
     // Library Destructor called here automatically!
     // It will delete the Books, but NOT Girdhari or mrGLAL.
 
+    cout << endl <<"--- Back in Main ---" << endl;
+    cout << "Do Girdhari and mrGLAL still exist? Yes." << endl;
+    cout << "Girdhari's Name: " << Girdhari.getName() << endl;
+
+    // Verify Static count is back to 0 (Books were deleted by Library)
+    cout << "Total Books in Systme now: " << Book::getTotalBooks() << endl;
+
+}
