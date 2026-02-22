@@ -63,3 +63,24 @@ protected:
 public: 
     Account(int acc, string n, double bal) : accountNumber(acc), OwnerName(n), balance(bal){}
 
+    virtual bool withdraw(double amount) = 0;
+    virtual void calculateInterest() = 0;
+
+    virtual void displayInfo(){
+        cout << "Account No: " << accountNumber << endl;
+        cout << "Owner: " << OwnerName << endl;
+        cout << "Balance: " << balance << endl;
+    }
+
+    double operator+(Account &other){
+        return this->balance + other.balance;
+    }
+
+    virtual ~Account(){}
+};
+
+class SavingAccount : public Account{
+    double interestRate;
+
+public:
+    SavingAccount(int acc, string n, double bal, double IR) : Account(acc, n, bal), interestRate(IR) {}
