@@ -97,3 +97,17 @@ public:
         balance += balance * interestRate;
     }
 
+    void displayInfo() override{
+        Account::displayInfo();
+        cout << "Type: Savings\nInterest Rate: " << interestRate << endl;
+    }
+};
+
+class CurrentAccount : public Account{
+    double overdraftLimit;
+
+public:
+    CurrentAccount(int acc, string n, double bal, double limit) : Account(acc, n, bal), overdraftLimit(limit){}
+
+    bool withdraw(double amount) override{
+        if(balance - amount >= -overdraftLimit){
