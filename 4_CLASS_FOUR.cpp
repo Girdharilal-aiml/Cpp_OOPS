@@ -34,3 +34,13 @@ public:
 // Initialize static member
 int Book::totalBooksCount = 0;
 
+class Member {
+private: 
+    string name;
+    int memberID;
+
+public:
+    Member(string n, int id) : name(n), memberID(id) {}
+
+    string getName() const{ return name; }
+};
