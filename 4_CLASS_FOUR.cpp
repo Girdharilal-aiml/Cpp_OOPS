@@ -65,3 +65,10 @@ public:
             // We create the book HERE (Composition)
             books[bookCount] = new Book(title, isbn);
             bookCount++;
+        }else{
+            cout << "Error: Library is full!" << endl;
+        }
+    }
+
+    void registerMember(Member* m){
+        if (memberCount < MAX_CAPACITY){
