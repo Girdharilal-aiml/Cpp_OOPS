@@ -49,3 +49,9 @@ class Library {
 private:
     string LibraryName;
 
+    // COMPOSITION: Library hold pointers to books it OWN.
+    Book* books[MAX_CAPACITY];
+    int bookCount;
+
+    // AGGREGATION: Library holds pointers to members it REFERENCES.
+    Member* members[MAX_CAPACITY];
