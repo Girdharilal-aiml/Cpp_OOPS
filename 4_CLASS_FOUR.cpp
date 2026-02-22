@@ -16,3 +16,11 @@ public:
         totalBooksCount++;
     }
 
+    void displayinfo() const{
+        cout << "   [Book] " << title << " (ISBN: " << isbn << ")" << endl;
+    }
+
+    static int getTotalBooks(){
+        return totalBooksCount;
+    }
+
