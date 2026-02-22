@@ -135,3 +135,17 @@ public:
     FixedAccount(int acc, string n, double bal, int months, double rate) : Account(acc, n, bal), lockPeriod(months), InterestRATE(rate) {}
     
     bool withdraw(double amount) override{
+        return false; // Not Allowed
+    }
+
+    void calculateInterest() override{
+        balance += balance * (InterestRATE * 2);
+    }
+
+    void displayInfo() override{
+        Account::displayInfo();
+        cout << "Type: Fixed\nLock Period: " << lockPeriod << " months\n";
+    }
+
+};
+
