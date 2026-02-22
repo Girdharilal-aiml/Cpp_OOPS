@@ -124,3 +124,11 @@ int main(){
         // 4. Register Members (Passing address -> Aggregation)
         ciytlab.registerMember(&Girdhari);
         ciytlab.registerMember(&mrGLAL);
+
+        ciytlab.displayDetails();
+
+        cout << "\n[System] Existing Library scope block..." << endl;
+    }
+    // Library Destructor called here automatically!
+    // It will delete the Books, but NOT Girdhari or mrGLAL.
+
