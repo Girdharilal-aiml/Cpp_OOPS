@@ -50,3 +50,16 @@ There are three types of accounts:
 
 ===========================================
 */
+
+#include"iostream"
+using namespace std;
+
+class Account{
+protected:
+    int accountNumber;
+    string OwnerName;
+    double balance;
+
+public: 
+    Account(int acc, string n, double bal) : accountNumber(acc), OwnerName(n), balance(bal){}
+
