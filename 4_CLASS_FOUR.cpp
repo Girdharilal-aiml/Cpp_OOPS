@@ -77,3 +77,16 @@ public:
             memberCount++;
         }else{
             cout << "Error: Member list is full!" << endl;
+        }
+    }
+
+    void displayDetails() {
+        cout << endl <<"=== " << LibraryName << " Status ===" << endl;
+
+        cout << "=== Books Catalog ===" << endl;
+        for (int i = 0; i < bookCount; i++){
+            books[i]->displayinfo();
+        }
+
+        cout << endl <<"--- Registered Members ---" << endl;
+        for(int i = 0; i < memberCount; i++){
