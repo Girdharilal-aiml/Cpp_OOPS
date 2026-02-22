@@ -90,3 +90,10 @@ public:
 
         cout << endl <<"--- Registered Members ---" << endl;
         for(int i = 0; i < memberCount; i++){
+            cout << "   [Member] " << members[i]->getName() << endl;
+        }
+
+        // Accessing Static Function
+        cout << endl << "=== System Stats ===" << endl;
+        cout << "    Total Books in System (Static): " << Book::getTotalBooks() << endl;
+    }
