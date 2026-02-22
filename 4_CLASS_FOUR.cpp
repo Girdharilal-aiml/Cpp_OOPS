@@ -72,3 +72,8 @@ public:
 
     void registerMember(Member* m){
         if (memberCount < MAX_CAPACITY){
+            // We just store the address (Aggregation)
+            members[memberCount] = m;
+            memberCount++;
+        }else{
+            cout << "Error: Member list is full!" << endl;
