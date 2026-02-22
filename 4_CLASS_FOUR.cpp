@@ -55,3 +55,13 @@ private:
 
     // AGGREGATION: Library holds pointers to members it REFERENCES.
     Member* members[MAX_CAPACITY];
+    int memberCount;
+
+public:
+    Library(string name) : LibraryName(name), bookCount(0), memberCount(0) {}
+
+    void addBook(string title, string isbn){
+        if(bookCount < MAX_CAPACITY){
+            // We create the book HERE (Composition)
+            books[bookCount] = new Book(title, isbn);
+            bookCount++;
