@@ -117,3 +117,10 @@ int main(){
         // 2. Create Library
         Library ciytlab("FAST NUCES");
 
+        // 3. Add Books (Library creates them internally -> Composition)
+        ciytlab.addBook("Book 1", "921-199212312");
+        ciytlab.addBook("Book 2", "921-188212413");
+
+        // 4. Register Members (Passing address -> Aggregation)
+        ciytlab.registerMember(&Girdhari);
+        ciytlab.registerMember(&mrGLAL);
