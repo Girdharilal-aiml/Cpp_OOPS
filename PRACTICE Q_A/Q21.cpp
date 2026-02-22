@@ -158,4 +158,20 @@ int main(){
     accounts[2] = new FixedAccount(3,"Girdhari lal", 10000 , 5, 0.10);
     accounts[3] = new SavingAccount(4,"ELEVEN", 10000, 0.03);
 
+    for (int i = 0; i < 4; i++){
+        accounts[i]->displayInfo();
+        cout << "Withdraw 1500: ";
+        if (accounts[i]->withdraw(1500))
+            cout << "Success\n";
+        else
+            cout << "Failed\n";
+        cout << "-------------------------\n";
+    }
 
+    // Memory Cleanup
+    for (int i = 0; i < 4; i++){
+        delete accounts[i];
+    }
+
+    return 0; 
+}
