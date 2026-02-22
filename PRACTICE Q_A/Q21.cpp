@@ -149,3 +149,13 @@ public:
 
 };
 
+int main(){
+
+    Account* accounts[4];
+
+    accounts[0] = new SavingAccount(1,"GLAL", 5000, 0.10);
+    accounts[1] = new CurrentAccount(2,"LAL", 1000, 5000);
+    accounts[2] = new FixedAccount(3,"Girdhari lal", 10000 , 5, 0.10);
+    accounts[3] = new SavingAccount(4,"ELEVEN", 10000, 0.03);
+
+
