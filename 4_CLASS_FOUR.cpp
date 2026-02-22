@@ -97,3 +97,12 @@ public:
         cout << endl << "=== System Stats ===" << endl;
         cout << "    Total Books in System (Static): " << Book::getTotalBooks() << endl;
     }
+    ~Library(){
+        cout << endl <<"[System] Library '" << LibraryName << "' is closing down..." << endl;
+
+        for (int i = 0; i < bookCount; i++){
+            delete books[i];
+        }
+    }
+};
+
