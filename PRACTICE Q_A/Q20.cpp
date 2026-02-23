@@ -80,7 +80,11 @@ public:
         return salary;
     }
 
-    
+    void displayInfo() override{
+        Employee::displayInfo();
+        cout << "Hours: " << hours << endl;
+        cout << "Hourly Rate: " << hourlyRATE << endl;
+    }
 };
 
 int main(){
