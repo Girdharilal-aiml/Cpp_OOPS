@@ -25,8 +25,6 @@ There are two types of employees:
     - Loop through and call displayInfo() on each
     - Show proper memory cleanup
 
-(d) What will happen if you remove the virtual keyword from the destructor?
-    Explain in 2-3 lines.
 ===========================================
 */
 
@@ -34,9 +32,27 @@ There are two types of employees:
 using namespace std;
 
 class Employee{
+protected:
+    string name;
+    string ID;
+    double salary;
 
+public:
+    Employee(string n, string id, double sal) : name(n), ID(id), salary(sal){}
+
+    virtual double calculateSalary() = 0;
+
+    virtual void displayInfo(){
+    cout << "Name: " << name << endl;
+    cout << "ID: " << ID << endl;
+    cout << "Salary: " << calculateSalary() << endl;
+    }
+
+    virtual ~Employee(){}
 };
 
-int main(){
 
+
+int main(){
+    
 }
