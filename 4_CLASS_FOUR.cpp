@@ -67,7 +67,7 @@ public:
             bookCount++;
         }else{
             cout << "Error: Library is full!" << endl;
-        }
+    }
     }
 
     void registerMember(Member* m){
