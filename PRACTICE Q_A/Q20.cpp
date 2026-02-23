@@ -51,7 +51,37 @@ public:
     virtual ~Employee(){}
 };
 
+class FULL_TIME : public Employee{
+    double bonus;
+public:
 
+    FULL_TIME(string n, string id, double sal, double bon) : Employee(n, id, sal), bonus(bon) {}
+
+    double calculateSalary() override {
+        salary = salary + bonus;
+        return salary;
+    }
+
+    void displayInfo() override{
+        Employee::displayInfo();
+        cout << "Bonus: " << bonus << endl;
+    }
+};
+
+class PART_TIME : public Employee{
+    int hours;
+    double hourlyRATE;
+
+public:
+    PART_TIME(string n, string id, int h, double HR) : Employee(n, id, 0), hours(h), hourlyRATE(HR) {}
+
+    double calculateSalary() override {
+        salary = hours * hourlyRATE;
+        return salary;
+    }
+
+    
+};
 
 int main(){
     
