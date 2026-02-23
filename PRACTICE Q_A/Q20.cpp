@@ -88,5 +88,20 @@ public:
 };
 
 int main(){
-    
+    Employee* E[3];
+
+    E[0] = new PART_TIME("Girdhari lal", "25k0005", 8, 100.00);
+    E[1] = new FULL_TIME("GLAL", "25k0005", 100000.00 , 50000.00);
+    E[2] = new PART_TIME("ELEVEN", "26k0006", 10, 50.00);
+
+    for (int i = 0; i<3; i++){
+        E[i]->displayInfo();
+        cout << "--------------------------------------" << endl;
+    }
+
+    for (int i= 0; i<3; i++){
+        delete E[i];
+    }
+
+    return 0;
 }
