@@ -8,5 +8,9 @@ Requirements:
 2. Person base class (name, age, CNIC) — 
    inherits MedicalStaff
 
+3. Doctor inherits Person:
+   - specialization, consultationFee
+   - computePay() = consultationFee x patients seen
+
 
 */
