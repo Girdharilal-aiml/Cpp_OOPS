@@ -22,3 +22,9 @@ public:
 // BASE CLASS — Encapsulation in action
 // Private data, public getters/setters
 // ============================================
+class Person : public Role {
+private:
+    string name;   // private = encapsulated
+    int age;
+    string id;
+
