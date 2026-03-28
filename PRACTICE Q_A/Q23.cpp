@@ -91,3 +91,12 @@ public:
 };
 
 
+// ============================================
+// CHILD CLASS 2 — Inheritance from Person
+// Teacher IS-A Person
+// ============================================
+class Teacher : public Person {
+private:
+    string subject;
+    double salary;
+
