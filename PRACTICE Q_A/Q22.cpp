@@ -20,5 +20,12 @@ Requirements:
    - name, disease, assigned Doctor
    - displayPatient()
 
+6. Hospital class:
+   - holds array of Doctors, Nurses, Patients
+   - admitPatient(), hireDoctor(), hireNurse()
+   - generatePayroll() — loops all staff, 
+     calls computePay() polymorphically
+   - generateReport() — displays everything
+
 
 */
