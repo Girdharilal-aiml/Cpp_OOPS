@@ -16,5 +16,9 @@ Requirements:
    - department, hourlyRate, hoursWorked
    - computePay() = hourlyRate x hoursWorked
 
+5. Patient class (separate, does NOT inherit Person):
+   - name, disease, assigned Doctor
+   - displayPatient()
+
 
 */
