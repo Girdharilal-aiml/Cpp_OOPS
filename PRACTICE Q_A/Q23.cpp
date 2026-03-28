@@ -55,3 +55,8 @@ public:
 // Student IS-A Person
 // ============================================
 class Student : public Person {
+private:
+    float cgpa;
+    string enrolledCourse;
+
+public:
