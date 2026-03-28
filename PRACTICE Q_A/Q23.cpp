@@ -137,3 +137,21 @@ private:
     Teacher* teacher;        // Pointer to a Teacher object
     Student* students[50];   // Array of Student pointers
     int studentCount;
+
+public:
+    Course(string name, Teacher* t) {
+        courseName = name;
+        teacher = t;
+        studentCount = 0;
+    }
+
+    void enrollStudent(Student* s) {
+        if (studentCount < 50) {
+            students[studentCount] = s;
+            studentCount++;
+            cout << s->getName() << " enrolled in " << courseName << endl;
+        } else {
+            cout << "Course is full!" << endl;
+        }
+    }
+
