@@ -41,3 +41,12 @@ public:
     int getAge()     { return age; }
     string getID()   { return id; }
 
+    // Setters (controlled modification)
+    void setName(string n) { name = n; }
+    void setAge(int a) {
+        if (a > 0) age = a;  // validation
+        else cout << "Invalid age!" << endl;
+    }
+};
+
+
