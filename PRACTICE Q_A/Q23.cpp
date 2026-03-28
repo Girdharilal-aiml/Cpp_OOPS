@@ -100,3 +100,10 @@ private:
     string subject;
     double salary;
 
+public:
+    Teacher(string n, int a, string id, string sub, double sal)
+        : Person(n, a, id) {
+        subject = sub;
+        salary = sal;
+    }
+
