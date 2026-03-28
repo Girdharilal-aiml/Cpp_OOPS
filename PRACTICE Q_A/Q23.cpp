@@ -155,3 +155,27 @@ public:
         }
     }
 
+    void displayCourse() {
+        cout << "========================================" << endl;
+        cout << "COURSE  : " << courseName << endl;
+        cout << "TEACHER : " << teacher->getName() << endl;
+        cout << "STUDENTS ENROLLED: " << studentCount << endl;
+        for (int i = 0; i < studentCount; i++) {
+            cout << "  -> " << students[i]->getName()
+                 << " (CGPA: " << students[i]->getCGPA() << ")" << endl;
+        }
+    }
+};
+
+
+// ============================================
+// UNIVERSITY CLASS — Brings everything together
+// ============================================
+class University {
+private:
+    string uniName;
+    Student* students[100];
+    Teacher* teachers[50];
+    Course*  courses[20];
+    int sCount, tCount, cCount;
+
