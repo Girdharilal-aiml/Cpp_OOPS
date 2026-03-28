@@ -12,5 +12,9 @@ Requirements:
    - specialization, consultationFee
    - computePay() = consultationFee x patients seen
 
+4. Nurse inherits Person:
+   - department, hourlyRate, hoursWorked
+   - computePay() = hourlyRate x hoursWorked
+
 
 */
