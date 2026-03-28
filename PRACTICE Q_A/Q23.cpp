@@ -213,3 +213,54 @@ public:
     }
 };
 
+
+// ============================================
+// MAIN — Where everything runs
+// ============================================
+int main() {
+
+    // Create Teachers
+    Teacher t1("Sir Ahmed", 45, "T001", "OOP in C++", 85000);
+    Teacher t2("Ma'am Sana", 38, "T002", "Data Structures", 90000);
+
+    // Create Students
+    Student s1("Ali", 20, "S001", 3.5, "OOP in C++");
+    Student s2("Sara", 19, "S002", 3.8, "OOP in C++");
+    Student s3("Hamza", 21, "S003", 2.9, "Data Structures");
+
+    // Create Courses and assign teachers
+    Course c1("OOP in C++", &t1);
+    Course c2("Data Structures", &t2);
+
+    // Enroll students in courses
+    c1.enrollStudent(&s1);
+    c1.enrollStudent(&s2);
+    c2.enrollStudent(&s3);
+
+    // Build University
+    University uni("FAST NUCES");
+    uni.addTeacher(&t1);
+    uni.addTeacher(&t2);
+    uni.addStudent(&s1);
+    uni.addStudent(&s2);
+    uni.addStudent(&s3);
+    uni.addCourse(&c1);
+    uni.addCourse(&c2);
+
+    // Generate full report
+    uni.generateReport();
+
+    // POLYMORPHISM DEMO — Same pointer type, different behavior
+    cout << "\n--- POLYMORPHISM DEMO ---" << endl;
+    Role* people[4];
+    people[0] = &t1;
+    people[1] = &t2;
+    people[2] = &s1;
+    people[3] = &s2;
+
+    for (int i = 0; i < 4; i++) {
+        people[i]->showRole(); // Calls correct version automatically!
+    }
+
+    return 0;
+}
