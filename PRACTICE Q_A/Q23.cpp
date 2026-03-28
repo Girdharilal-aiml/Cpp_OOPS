@@ -179,3 +179,37 @@ private:
     Course*  courses[20];
     int sCount, tCount, cCount;
 
+public:
+    University(string name) {
+        uniName = name;
+        sCount = tCount = cCount = 0;
+    }
+
+    void addStudent(Student* s) { students[sCount++] = s; }
+    void addTeacher(Teacher* t) { teachers[tCount++] = t; }
+    void addCourse(Course* c)   { courses[cCount++] = c; }
+
+    void generateReport() {
+        cout << "\n========================================" << endl;
+        cout << "   UNIVERSITY REPORT: " << uniName << endl;
+        cout << "========================================" << endl;
+
+        cout << "\n--- TEACHERS ---" << endl;
+        for (int i = 0; i < tCount; i++) {
+            teachers[i]->display();
+            teachers[i]->showRole();  // Polymorphism in action
+        }
+
+        cout << "\n--- STUDENTS ---" << endl;
+        for (int i = 0; i < sCount; i++) {
+            students[i]->display();
+            students[i]->showRole();  // Polymorphism in action
+        }
+
+        cout << "\n--- COURSES ---" << endl;
+        for (int i = 0; i < cCount; i++) {
+            courses[i]->displayCourse();
+        }
+    }
+};
+
