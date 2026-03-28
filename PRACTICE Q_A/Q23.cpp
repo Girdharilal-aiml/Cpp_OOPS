@@ -10,3 +10,11 @@ using namespace std;
 // Cannot be instantiated, forces child classes
 // to define their own version of showRole()
 // ============================================
+class Role {
+public:
+    virtual void showRole() = 0; // Pure virtual function
+    virtual void display() = 0;  // Pure virtual function
+    virtual ~Role() {}           // Virtual destructor (good practice)
+};
+
+
