@@ -114,3 +114,16 @@ public:
         cout << "I am a Teacher." << endl;
     }
 
+    // POLYMORPHISM — Teacher's own version of display()
+    void display() override {
+        cout << "----------------------------------------" << endl;
+        cout << "TEACHER RECORD" << endl;
+        cout << "Name    : " << getName() << endl;
+        cout << "ID      : " << getID() << endl;
+        cout << "Age     : " << getAge() << endl;
+        cout << "Subject : " << subject << endl;
+        cout << "Salary  : " << salary << endl;
+    }
+};
+
+
