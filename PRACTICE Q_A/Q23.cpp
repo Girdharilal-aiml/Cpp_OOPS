@@ -78,3 +78,16 @@ public:
         cout << "I am a Student." << endl;
     }
 
+    // POLYMORPHISM — Student's own version of display()
+    void display() override {
+        cout << "----------------------------------------" << endl;
+        cout << "STUDENT RECORD" << endl;
+        cout << "Name    : " << getName() << endl;
+        cout << "ID      : " << getID() << endl;
+        cout << "Age     : " << getAge() << endl;
+        cout << "CGPA    : " << cgpa << endl;
+        cout << "Course  : " << enrolledCourse << endl;
+    }
+};
+
+
