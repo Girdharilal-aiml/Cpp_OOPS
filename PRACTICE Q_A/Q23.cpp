@@ -107,3 +107,10 @@ public:
         salary = sal;
     }
 
+    string getSubject() { return subject; }
+
+    // POLYMORPHISM — Teacher's own version of showRole()
+    void showRole() override {
+        cout << "I am a Teacher." << endl;
+    }
+
