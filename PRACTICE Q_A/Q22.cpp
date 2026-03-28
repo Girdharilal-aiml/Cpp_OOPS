@@ -27,5 +27,10 @@ Requirements:
      calls computePay() polymorphically
    - generateReport() — displays everything
 
-
+7. In main():
+   - Create 2 doctors, 2 nurses, 3 patients
+   - Assign doctors to patients
+   - Run generatePayroll()
+   - Run generateReport()
+   - Show polymorphism using MedicalStaff* array 
 */
