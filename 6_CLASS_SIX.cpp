@@ -21,6 +21,9 @@ private:
 public:
     Manager(string name, int employeeID, double baseSalary, int teamSize) : Employee(name, employeeID, baseSalary), teamSize(teamSize){}
 
+    void displayDetails(){
+
+    }
 };
 
 
