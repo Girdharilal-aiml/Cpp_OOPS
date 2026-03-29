@@ -15,5 +15,7 @@ public:
 
 };
 
+class Manager : private Employee{
 
+};
 
