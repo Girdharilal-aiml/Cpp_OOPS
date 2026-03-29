@@ -22,7 +22,9 @@ public:
     Manager(string name, int employeeID, double baseSalary, int teamSize) : Employee(name, employeeID, baseSalary), teamSize(teamSize){}
 
     void displayDetails(){
-
+        cout << "Manager" << endl;
+        Employee::displayDetails();
+        cout << "Team Size: " << teamSize << endl;
     }
 };
 
