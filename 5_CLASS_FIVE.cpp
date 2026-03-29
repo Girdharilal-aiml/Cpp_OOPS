@@ -17,6 +17,9 @@ public:
 
 class Manager : private Employee{
 private:
- 
+    int teamSize;
+
+public:
+    
 };
 
