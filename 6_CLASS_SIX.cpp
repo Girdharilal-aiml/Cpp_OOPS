@@ -28,5 +28,8 @@ public:
     }
 };
 
+class test : public Manager{
+public:
 
+};
 
