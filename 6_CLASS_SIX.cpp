@@ -30,6 +30,11 @@ public:
 
 class test : public Manager{
 public:
-
+    void test1(){
+        cout << name;
+    }
 };
 
+int main(){
+
+}
