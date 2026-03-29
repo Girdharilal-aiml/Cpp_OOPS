@@ -2,6 +2,9 @@
 using namespace std;
 
 class Employee{
+public:
+    
+   
 
 };
 
