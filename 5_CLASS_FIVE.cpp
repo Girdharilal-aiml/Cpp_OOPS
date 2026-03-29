@@ -7,7 +7,9 @@ public:
     int employeeid;
     double basesalary;
 
-   
+    Employee(string name, int id, double salary) : name(name), employeeid(id), basesalary(salary){}
+
+    
 
 };
 
