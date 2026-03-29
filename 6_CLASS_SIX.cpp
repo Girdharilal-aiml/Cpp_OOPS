@@ -36,5 +36,9 @@ public:
 };
 
 int main(){
-
+    Employee emp("Alice", 101, 50000);
+    Manager mgr("Bob", 102, 80000, 5);
+    mgr.displayDetails();
+    emp.name;
+    mgr.name;
 }
