@@ -9,7 +9,9 @@ public:
 
     Employee(string name, int id, double salary) : name(name), employeeid(id), basesalary(salary){}
 
-    
+    void displayDetails(){
+        cout << "ID " << employeeid << " | Name: " << name << " | Base Salary: " << basesalary << endl;
+    }
 
 };
 
