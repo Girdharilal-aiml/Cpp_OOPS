@@ -66,5 +66,7 @@ int main(){
     eng.logAtt(8);
     mgr.logAtt(10, "ProjectX");
 
+    Employee* companyRoles[3];
+
     
 }
