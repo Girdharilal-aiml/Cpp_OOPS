@@ -63,5 +63,8 @@ int main(){
     Manager mgr(102, "Bob", 5);
     TechLead lead(103, "Charlie", "C++", 3, 15000);
 
+    eng.logAtt(8);
+    mgr.logAtt(10, "ProjectX");
+
     
 }
