@@ -37,7 +37,10 @@ class Manager : virtual public Employee{
 protected:
     int teamSize;
 
+public:
+    Manager(int id, string name, int teamSize) : Employee(id, name), teamSize(teamSize) {}
 
+   
 };
 
 
