@@ -47,7 +47,10 @@ public:
 
 class TechLead : public Engineer, public Manager{
 protected:
-
+    double bonus;
+public:
+    
+    
 
 };
 
