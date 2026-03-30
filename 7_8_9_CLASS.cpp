@@ -68,5 +68,9 @@ int main(){
 
     Employee* companyRoles[3];
 
+    companyRoles[0] = &eng;
+    companyRoles[1] = &mgr;
+    companyRoles[2] = &lead;
+
     
 }
