@@ -52,7 +52,9 @@ public:
     TechLead(int id, string name, string language, int teamSize, double bonus) 
         : Employee(id, name), Engineer(id, name, language), Manager(id, name, teamSize), bonus(bonus) {}
 
-    
+    void reportStatus() override {
+        cout << "Tech Lead " << name << " -Coding in " << language << " - leading " << teamSize << " people. Bonus: $" << bonus << "." << endl; 
+    }
 
 };
 
