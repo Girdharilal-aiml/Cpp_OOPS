@@ -33,7 +33,9 @@ public:
     }
 };
 
+class Manager : virtual public Employee{
 
+};
 
 
 
