@@ -23,6 +23,8 @@ public:
 };
 
 class Engineer : virtual public Employee{
+protected:
+    string language;
 
 };
 
