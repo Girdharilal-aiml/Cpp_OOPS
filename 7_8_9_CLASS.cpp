@@ -13,7 +13,11 @@ public:
         cout << "Time log: " << hours << " logged " << hours << " hours." << endl;  
     }
 
- 
+    void logAtt(int hours, string pCode){
+        cout << "Time log: " << name << " Logged " << hours << " hours on project: " << pCode << "." << endl;
+    }
+
+    
 };
 
 
