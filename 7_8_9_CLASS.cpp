@@ -22,7 +22,9 @@ public:
     }
 };
 
+class Engineer : virtual public Employee{
 
+};
 
 
 
