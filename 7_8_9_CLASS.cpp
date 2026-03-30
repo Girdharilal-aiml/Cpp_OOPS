@@ -40,7 +40,9 @@ protected:
 public:
     Manager(int id, string name, int teamSize) : Employee(id, name), teamSize(teamSize) {}
 
-   
+    void reportStatus() override {
+        cout << "Manager " << name << " ,ID: " << id << " - Manages a team of " << teamSize << " members." << endl;
+    }
 };
 
 
