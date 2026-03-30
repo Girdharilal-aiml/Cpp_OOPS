@@ -9,7 +9,11 @@ protected:
 public:
     Employee(int id, string name) : id(id), name(name) {}
 
+    void logAtt(int hours){
+        cout << "Time log: " << hours << " logged " << hours << " hours." << endl;  
+    }
 
+ 
 };
 
 
