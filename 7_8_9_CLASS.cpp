@@ -49,7 +49,9 @@ class TechLead : public Engineer, public Manager{
 protected:
     double bonus;
 public:
-    
+    TechLead(int id, string name, string language, int teamSize, double bonus) 
+        : Employee(id, name), Engineer(id, name, language), Manager(id, name, teamSize), bonus(bonus) {}
+
     
 
 };
