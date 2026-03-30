@@ -28,7 +28,9 @@ protected:
 public:
     Engineer(int id, string name, string language) : Employee(id, name), language(language) {}
 
-    
+    void reportStatus() override {
+        cout << "Engineer " << name << " ,ID: " << id << " - Coding in " << language << "." << endl;
+    }
 };
 
 
