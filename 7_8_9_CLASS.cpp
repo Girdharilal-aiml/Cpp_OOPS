@@ -17,7 +17,9 @@ public:
         cout << "Time log: " << name << " Logged " << hours << " hours on project: " << pCode << "." << endl;
     }
 
-    
+    virtual void reportStatus(){     
+        cout << "Staff " << name << " ,ID: " << id << " -General Duties." << endl;
+    }
 };
 
 
