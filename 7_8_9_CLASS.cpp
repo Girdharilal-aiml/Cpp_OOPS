@@ -72,5 +72,7 @@ int main(){
     companyRoles[1] = &mgr;
     companyRoles[2] = &lead;
 
-    
+    for (int i = 0; i < 3; i++){
+        companyRoles[i]->reportStatus();
+    }
 }
