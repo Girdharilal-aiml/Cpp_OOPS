@@ -34,6 +34,9 @@ public:
 };
 
 class Manager : virtual public Employee{
+protected:
+    int teamSize;
+
 
 };
 
