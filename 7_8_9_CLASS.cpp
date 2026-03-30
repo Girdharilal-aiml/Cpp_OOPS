@@ -25,7 +25,10 @@ public:
 class Engineer : virtual public Employee{
 protected:
     string language;
+public:
+    Engineer(int id, string name, string language) : Employee(id, name), language(language) {}
 
+    
 };
 
 
