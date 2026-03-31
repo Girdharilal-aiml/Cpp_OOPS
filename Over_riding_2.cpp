@@ -15,3 +15,8 @@ public:
     }
 };
 
+int main(){
+    B b1,b2;
+    b1.fun();   // Derived class function
+    b2.A::fun();   // Base class function
+}
