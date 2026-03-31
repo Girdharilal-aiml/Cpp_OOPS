@@ -8,3 +8,10 @@ public:
     }
 };
 
+class B : public A{
+public:
+    void fun(){
+        cout<<"Derived class function"<<endl;
+    }
+};
+
