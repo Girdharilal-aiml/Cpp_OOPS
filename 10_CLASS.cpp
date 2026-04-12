@@ -27,6 +27,9 @@ class Rupee{
 
         Rupee operator-=(Rupee& obj){
             data -= obj.data;
+            return *this;
+        }
+
 
 int main(){
 
