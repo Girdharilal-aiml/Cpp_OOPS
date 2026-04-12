@@ -14,6 +14,10 @@ class Rupee{
 
         Rupee operator+(const Rupee& obj){
             return Rupee(data + obj.data);
+        }
+
+        Rupee operator-(Rupee& obj){
+            return Rupee(data - obj.data);
         
 
 
