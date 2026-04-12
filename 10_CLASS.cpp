@@ -57,5 +57,6 @@ int main(){
     
     retail = wholesale + 10;
 
+    cout << "New Retail Price 2: " << retail << endl;
 
 }
