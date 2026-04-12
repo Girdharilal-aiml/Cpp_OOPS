@@ -25,8 +25,8 @@ class Rupee{
             return *this;
         }
 
+        Rupee operator-=(Rupee& obj){
 
-        
 int main(){
 
 
