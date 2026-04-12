@@ -59,4 +59,6 @@ int main(){
 
     cout << "New Retail Price 2: " << retail << endl;
 
+    retail = ~retail;
+
 }
