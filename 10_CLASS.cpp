@@ -44,5 +44,7 @@ int main(){
     retail = wholesale;
 
     cout << "wholesale Price: " << wholesale << endl;
+    cout << "Retail Price: " << retail << endl;
+
 
 }
