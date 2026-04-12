@@ -40,5 +40,7 @@ ostream& operator<<(ostream& os, Rupee& obj){
 
 int main(){
 
+    Rupee wholesale(20), retail(0);
+    retail = wholesale;
 
 }
