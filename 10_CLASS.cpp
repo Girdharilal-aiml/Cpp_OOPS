@@ -6,6 +6,8 @@ class Rupee{
         int data;
 
     public:
+        Rupee(int data) : data(data){}
+
         
 
 
