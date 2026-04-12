@@ -62,4 +62,5 @@ int main(){
     retail = ~retail;
 
     cout << "Negative Retail Price: " << retail << endl;    
+
 }
