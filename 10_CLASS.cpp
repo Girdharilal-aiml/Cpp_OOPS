@@ -30,6 +30,8 @@ class Rupee{
             return *this;
         }
 
+        friend ostream& operator<<(ostream& os, Rupee& obj);
+};
 
 int main(){
 
