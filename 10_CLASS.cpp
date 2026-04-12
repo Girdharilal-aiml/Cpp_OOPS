@@ -49,5 +49,6 @@ int main(){
     Rupee discount(5);
 
     retail -= discount;
+    cout << "New Retail Price after discount: " << retail << endl;
 
 }
