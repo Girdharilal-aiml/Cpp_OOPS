@@ -8,6 +8,8 @@ class Rupee{
     public:
         Rupee(int data) : data(data){}
 
+        Rupee operator~(){
+            return Rupee(-data);
         
 
 
