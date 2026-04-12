@@ -53,5 +53,7 @@ int main(){
 
     wholesale = Rupee(50);
 
+    cout << "New Wholesale Price: " << wholesale << endl;
+    
 
 }
