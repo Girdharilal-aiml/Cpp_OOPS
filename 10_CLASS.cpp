@@ -33,6 +33,8 @@ class Rupee{
         friend ostream& operator<<(ostream& os, Rupee& obj);
 };
 
+ostream& operator<<(ostream& os, Rupee& obj){
+    os << obj.data;
 int main(){
 
 
