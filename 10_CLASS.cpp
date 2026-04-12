@@ -46,5 +46,7 @@ int main(){
     cout << "wholesale Price: " << wholesale << endl;
     cout << "Retail Price: " << retail << endl;
 
+    Rupee discount(5);
+
 
 }
