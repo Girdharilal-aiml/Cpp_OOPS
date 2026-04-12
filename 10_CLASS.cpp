@@ -10,6 +10,8 @@ class Rupee{
 
         Rupee operator~(){
             return Rupee(-data);
+        }
+
         
 
 
