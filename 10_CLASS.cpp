@@ -35,6 +35,9 @@ class Rupee{
 
 ostream& operator<<(ostream& os, Rupee& obj){
     os << obj.data;
+    return os;
+}
+
 int main(){
 
 
