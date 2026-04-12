@@ -5,6 +5,8 @@ class Rupee{
     private:
         int data;
 
+    public:
+        
 
 
 int main(){
