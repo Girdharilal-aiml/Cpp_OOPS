@@ -18,6 +18,10 @@ class Rupee{
 
         Rupee operator-(Rupee& obj){
             return Rupee(data - obj.data);
+        }
+
+        Rupee operator+=(Rupee& obj){
+            data += obj.data;
         
 
 
