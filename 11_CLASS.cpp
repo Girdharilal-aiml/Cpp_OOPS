@@ -9,6 +9,7 @@ class PaymentProcessor {
 class CreditCard : public PaymentProcessor{ 
     public:
         void processPayment(double amount){
+            cout << " Charging $" << amount << "via stripe API....." << endl;
         }
 };
 
