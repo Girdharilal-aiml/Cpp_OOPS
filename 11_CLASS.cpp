@@ -7,6 +7,7 @@ class PaymentProcessor {
 };
 
 class CreditCard : public PaymentProcessor{ 
+    public:
 };
 
 
