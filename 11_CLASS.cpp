@@ -42,5 +42,6 @@ int main(){
     CheckoutSystem system;
 
     CreditCard myCard;
+    PayPal myPayPal;
     
 }
