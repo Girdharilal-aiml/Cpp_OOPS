@@ -31,5 +31,7 @@ class CheckoutSystem {
     public:
         void checkout(PaymentProcessor* paymentMethod, double amount){
             cout << "Starting Checkout....." << endl;
+            paymentMethod->processPayment(amount);
+            cout << "Checkout Completed....." << endl;
         }
 };
