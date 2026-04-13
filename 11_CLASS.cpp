@@ -21,4 +21,5 @@ class PayPal : public PaymentProcessor{
 };
 
 class MobileWallet : public PaymentProcessor{ 
+    public:
 };
