@@ -35,3 +35,7 @@ class CheckoutSystem {
             cout << "Checkout Completed....." << endl;
         }
 };
+
+int main(){
+    
+}
