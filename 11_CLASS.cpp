@@ -49,5 +49,11 @@ int main(){
     activePaymentMethod = &myCard;
     system.checkout(activePaymentMethod, 25.99);
 
-    
+    cout << "\n ====User selects PayPal (2nd Output)==== " << endl;
+    activePaymentMethod = &myPayPal;
+    system.checkout(activePaymentMethod, 49.99);
+
+    cout << "\n ====User selects Mobile Wallet (3rd Output)==== " << endl;
+    activePaymentMethod = &wallet;
+    system.checkout(activePaymentMethod, 79.99);
 }
