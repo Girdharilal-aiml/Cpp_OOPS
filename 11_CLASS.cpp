@@ -28,5 +28,6 @@ class MobileWallet : public PaymentProcessor{
 };
 
 class CheckoutSystem {
+    public:
         
 };
