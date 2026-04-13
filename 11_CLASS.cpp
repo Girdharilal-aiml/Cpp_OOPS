@@ -26,3 +26,7 @@ class MobileWallet : public PaymentProcessor{
             cout << " Transferring $" << amount << " Via Easypaisa....." << endl;
         }
 };
+
+class CheckoutSystem {
+        
+};
