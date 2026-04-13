@@ -30,6 +30,6 @@ class MobileWallet : public PaymentProcessor{
 class CheckoutSystem {
     public:
         void checkout(PaymentProcessor* paymentMethod, double amount){
-            
+            cout << "Starting Checkout....." << endl;
         }
 };
