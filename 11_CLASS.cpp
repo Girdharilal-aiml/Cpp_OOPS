@@ -8,6 +8,8 @@ class PaymentProcessor {
 
 class CreditCard : public PaymentProcessor{ 
     public:
+        void processPayment(double amount){
+        }
 };
 
 
