@@ -23,5 +23,6 @@ class PayPal : public PaymentProcessor{
 class MobileWallet : public PaymentProcessor{ 
     public:
         void processPayment(double amount){
+            cout << " Transferring $" << amount << " Via Easypaisa....." << endl;
         }
 };
