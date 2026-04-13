@@ -15,5 +15,7 @@ class CreditCard : public PaymentProcessor{
 
 class PayPal : public PaymentProcessor{ 
     public:
+        void processPayment(double amount){
+        }
 };
 
