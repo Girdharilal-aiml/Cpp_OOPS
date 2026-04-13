@@ -43,5 +43,11 @@ int main(){
 
     CreditCard myCard;
     PayPal myPayPal;
+    MobileWallet wallet;
+
+    cout << " ====User selects Credit Card (1st Output)==== " << endl;
+    activePaymentMethod = &myCard;
+    system.checkout(activePaymentMethod, 25.99);
+
     
 }
