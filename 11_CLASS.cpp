@@ -39,5 +39,7 @@ class CheckoutSystem {
 int main(){
     PaymentProcessor* activePaymentMethod = nullptr;
 
+    CheckoutSystem system;
+
     
 }
