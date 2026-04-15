@@ -29,6 +29,9 @@ public:
         cout << "------------------------" << endl;
         cout << "Name       : " << name      << endl;
         cout << "Data Limit : " << dataLimit << " GB" << endl;
+        cout << "Data Used  : " << dataUsed  << " GB" << endl;
     }
 };
+
+int DataPlan::totalPlans = 0;
 
