@@ -35,3 +35,5 @@ public:
 
 int DataPlan::totalPlans = 0;
 
+int main() {
+}
