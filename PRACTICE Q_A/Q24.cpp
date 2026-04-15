@@ -25,5 +25,8 @@ public:
         totalPlans++;      
     }
 
+    void display() {
+        cout << "------------------------" << endl;
+    }
 };
 
