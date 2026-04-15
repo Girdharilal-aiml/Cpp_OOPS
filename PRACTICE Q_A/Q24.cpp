@@ -46,4 +46,7 @@ int main() {
     cout << "\n--- Copied Plan ---" << endl;
     p2.display();
 
+    cout << "\nTotal Plans: " << DataPlan::totalPlans << endl;
+
+    return 0;
 }
