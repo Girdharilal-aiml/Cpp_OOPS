@@ -22,6 +22,7 @@ public:
         name      = other.name;
         dataLimit = other.dataLimit;
         dataUsed  = 0;   
+        totalPlans++;      
     }
 
 };
