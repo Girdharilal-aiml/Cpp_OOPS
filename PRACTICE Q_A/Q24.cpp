@@ -38,4 +38,6 @@ int DataPlan::totalPlans = 0;
 int main() {
     DataPlan p1("Ali", 50.0, 30.0);   
     DataPlan p2 = p1;                
+    p2.display();                    
+
 }
