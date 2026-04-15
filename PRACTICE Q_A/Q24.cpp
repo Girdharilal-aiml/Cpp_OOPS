@@ -6,6 +6,8 @@ class DataPlan {
 private:
     string name;
     double dataLimit;
+    double dataUsed;
+
 
 
 };
