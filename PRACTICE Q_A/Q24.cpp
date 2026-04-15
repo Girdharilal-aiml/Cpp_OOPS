@@ -40,4 +40,10 @@ int main() {
     DataPlan p2 = p1;                
     p2.display();                    
 
+    cout << "\n--- Original Plan ---" << endl;
+    p1.display();
+
+    cout << "\n--- Copied Plan ---" << endl;
+    p2.display();
+
 }
