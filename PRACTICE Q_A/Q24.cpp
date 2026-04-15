@@ -36,4 +36,5 @@ public:
 int DataPlan::totalPlans = 0;
 
 int main() {
+    DataPlan p1("Ali", 50.0, 30.0);   
 }
