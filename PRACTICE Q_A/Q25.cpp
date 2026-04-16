@@ -79,6 +79,11 @@ public:
         : Freelancer(n, r, p) {}
 
     void calculateEarnings() override {
+        double bonus = 0;
+        if (completedProjects >= 5)
+            bonus = 10000;         // FullStack bonus
+        earnings = (baseRating * 9000) + bonus;
+
     }
 
 };
