@@ -21,6 +21,8 @@ public:
         cout << "Rating   : " << baseRating  << endl;
         cout << "Projects : " << completedProjects << endl;
         cout << "Earnings : Rs." << earnings << endl;
+        if (baseRating < 3)
+            cout << "Status   : Needs Improvement" << endl;
     }
 
 };
