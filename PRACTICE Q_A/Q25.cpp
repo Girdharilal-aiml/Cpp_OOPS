@@ -19,6 +19,7 @@ public:
         cout << "------------------------"   << endl;
         cout << "Name     : " << name        << endl;
         cout << "Rating   : " << baseRating  << endl;
+        cout << "Projects : " << completedProjects << endl;
     }
 
 };
