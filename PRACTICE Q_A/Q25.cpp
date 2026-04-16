@@ -35,6 +35,9 @@ public:
         : Freelancer(n, r, p) {}
 
     void calculateEarnings() override {
+        double bonus = 0;
+        if (completedProjects >= 5)
+            bonus = 15000;       
     }
 
 };
