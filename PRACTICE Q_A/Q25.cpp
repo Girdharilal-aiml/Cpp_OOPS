@@ -56,6 +56,20 @@ public:
     DataScientist(string n, double r, int p)
         : Freelancer(n, r, p) {}
 
+    void calculateEarnings() override {
+        double bonus = 0;
+        if (completedProjects >= 5)
+            bonus = 12000;        
+        earnings = (baseRating * 8000) + bonus;
+
+        if (completedProjects >= 5)
+            baseRating += 0.3;
+    }
+
+    void display() override {
+        cout << "\n[Data Scientist]" << endl;
+        Freelancer::display();
+    }
 };
 
 
