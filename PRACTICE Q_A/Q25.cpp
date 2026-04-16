@@ -25,9 +25,14 @@ public:
             cout << "Status   : Needs Improvement" << endl;
     }
 
+    virtual ~Freelancer() {}
 };
 
 
+class AIEngineer : public Freelancer {
+public:
+
+};
 
 
 
