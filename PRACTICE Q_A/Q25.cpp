@@ -51,6 +51,9 @@ public:
 };
 
 
+class DataScientist : public Freelancer {
+public:
+};
 
 
 
