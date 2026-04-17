@@ -19,6 +19,8 @@ public:
         title   = t;
         company = c;
         status  = "Active";
+        skillCount = 0;
+        totalJobs++;
     }
 
 
