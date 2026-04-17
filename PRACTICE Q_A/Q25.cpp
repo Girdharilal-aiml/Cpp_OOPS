@@ -107,5 +107,7 @@ int main() {
         freelancers[i]->display();
     }
 
-   
+    for (int i = 0; i < 3; i++)
+        delete freelancers[i];
+
 }
