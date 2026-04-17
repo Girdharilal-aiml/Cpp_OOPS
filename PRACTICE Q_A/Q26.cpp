@@ -24,6 +24,7 @@ public:
     }
 
     string getJobID()  const { return jobID; }
+    string getTitle()  const { return title; }
 
 
 };
