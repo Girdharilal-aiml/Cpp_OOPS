@@ -87,5 +87,8 @@ public:
         if (completedProjects >= 5)
             baseRating += 0.4;
     }
+
+    void display() override {
+    }
 };
 
