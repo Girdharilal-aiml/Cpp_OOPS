@@ -11,6 +11,8 @@ private:
     int skillCount;
     string status;
 
+public:
+
 
 
 };
