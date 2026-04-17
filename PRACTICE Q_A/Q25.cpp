@@ -96,5 +96,8 @@ public:
 
 
 int main() {
+    Freelancer* freelancers[3];
+
+    freelancers[0] = new AIEngineer   ("Ali",   3.5, 6);
    
 }
