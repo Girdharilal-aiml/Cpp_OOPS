@@ -45,3 +45,9 @@ public:
 int Job::totalJobs = 0;
 
 
+class Candidate {
+
+
+
+
+};
