@@ -42,3 +42,6 @@ public:
              << " | Status: " << status << endl;
     }
 };
+int Job::totalJobs = 0;
+
+
