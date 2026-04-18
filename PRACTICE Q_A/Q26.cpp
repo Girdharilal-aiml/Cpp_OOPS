@@ -54,6 +54,7 @@ protected:
     Job* appliedJobs[20];
     int appliedCount;
 
+public:
 
 
 
