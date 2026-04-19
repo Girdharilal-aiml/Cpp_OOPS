@@ -96,6 +96,7 @@ private:
     Candidate* assignedCandidates[20];
     int candidateCount;
 
+public:
 
 
 
