@@ -82,6 +82,7 @@ public:
     void displayCandidateInfo() {
         cout << "Candidate " << candidateID
              << " applications: ";
+        for (int i = 0; i < appliedCount; i++)
     }
 };
 
