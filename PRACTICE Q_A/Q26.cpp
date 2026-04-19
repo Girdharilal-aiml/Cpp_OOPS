@@ -99,6 +99,7 @@ private:
 public:
     TrainingProgram(string id, string course) {
         programID      = id;
+        courseName     = course;
     }
 
 
