@@ -87,4 +87,5 @@ public:
         cout << endl;
     }
 };
+int Candidate::totalCandidates = 0;
 
