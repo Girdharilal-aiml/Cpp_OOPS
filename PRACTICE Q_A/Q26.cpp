@@ -84,6 +84,7 @@ public:
              << " applications: ";
         for (int i = 0; i < appliedCount; i++)
             cout << appliedJobs[i]->getJobID() << " ";
+        cout << endl;
     }
 };
 
