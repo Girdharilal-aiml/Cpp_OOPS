@@ -117,7 +117,11 @@ public:
         for (int i = 0; i < candidateCount; i++)
             cout << "TrainingProgram " << programID
                  << " executed for Candidate "
+                 << assignedCandidates[i]->getID() << endl;
     }
 
+    void generateReport() {
+        cout << "Training Report for: " << courseName << endl;
+    }
 };
 
