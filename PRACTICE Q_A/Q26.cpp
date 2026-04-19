@@ -97,6 +97,8 @@ private:
     int candidateCount;
 
 public:
+    TrainingProgram(string id, string course) {
+    }
 
 
 
