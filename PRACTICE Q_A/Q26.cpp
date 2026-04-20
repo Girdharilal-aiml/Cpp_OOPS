@@ -148,6 +148,8 @@ public:
     void execute() {
         cout << "JobRoutine \"" << name << "\" executed:" << endl;
 
+        for (int i = 0; i < jCount; i++)
+            cout << "Job " << jobs[i]->getJobID()
     }
 };
 
