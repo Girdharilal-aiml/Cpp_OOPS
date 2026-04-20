@@ -126,6 +126,9 @@ public:
 };
 
 class JobRoutine {
+private:
+
+public:
 
 
 };
