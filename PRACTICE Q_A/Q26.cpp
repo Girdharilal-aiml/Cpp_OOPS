@@ -141,6 +141,7 @@ public:
         jCount = cCount = tCount = 0;
     }
 
+    void addJob(Job* j)                    { jobs[jCount++] = j; }
 
 };
 
