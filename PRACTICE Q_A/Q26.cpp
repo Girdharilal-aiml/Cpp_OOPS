@@ -128,6 +128,7 @@ public:
 class JobRoutine {
 private:
     string routineID;
+    string name;
 
 public:
 
