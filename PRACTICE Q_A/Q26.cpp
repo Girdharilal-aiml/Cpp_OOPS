@@ -192,5 +192,18 @@ int main() {
     c2.applyJob(&j2);
 
     TrainingProgram t1("T1", "Deep Learning Basics");
+    t1.assignCandidate(&c2);
 
+    JobRoutine routine("R1", "Daily AI Monitor");
+    routine.addJob(&j1);
+    routine.addJob(&j2);
+    routine.addCandidate(&c1);
+    routine.addCandidate(&c2);
+    routine.addTrainingProgram(&t1);
+    routine.execute();
+
+    cout << "\nTotal Jobs      : " << Job::totalJobs << endl;
+    cout << "Total Candidates: " << Candidate::totalCandidates << endl;
+
+    return 0;
 }
