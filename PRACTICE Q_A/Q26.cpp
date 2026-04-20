@@ -172,5 +172,9 @@ public:
 
     void applyForJob(Job* j)  { applyJob(j); }
 
+    void viewTrainingProgram(TrainingProgram* t) {
+        cout << name << " viewing: "
+             << t->getName() << endl;
+    }
 };
 
