@@ -129,6 +129,7 @@ class JobRoutine {
 private:
     string routineID;
     string name;
+    Job*             jobs[20];
 
 public:
 
