@@ -143,6 +143,7 @@ public:
 
     void addJob(Job* j)                    { jobs[jCount++] = j; }
     void addCandidate(Candidate* c)        { candidates[cCount++] = c; }
+    void addTrainingProgram(TrainingProgram* t) { trainingPrograms[tCount++] = t; }
 
 };
 
