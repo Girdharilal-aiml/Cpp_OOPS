@@ -155,6 +155,8 @@ public:
         for (int i = 0; i < cCount; i++)
             candidates[i]->displayCandidateInfo();
 
+        for (int i = 0; i < tCount; i++)
+            trainingPrograms[i]->executeProgram();
     }
 };
 
