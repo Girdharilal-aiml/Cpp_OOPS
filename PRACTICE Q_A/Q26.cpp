@@ -132,6 +132,7 @@ private:
     Job*             jobs[20];
     Candidate*       candidates[20];
     TrainingProgram* trainingPrograms[20];
+    int jCount, cCount, tCount;
 
 public:
 
