@@ -166,7 +166,11 @@ private:
 
 public:
     CandidateUser(string uid, string cid, string n)
+        : Candidate(cid, n) {
+        userID = uid;
     }
+
+    void applyForJob(Job* j)  { applyJob(j); }
 
 };
 
