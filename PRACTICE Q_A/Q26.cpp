@@ -131,6 +131,7 @@ private:
     string name;
     Job*             jobs[20];
     Candidate*       candidates[20];
+    TrainingProgram* trainingPrograms[20];
 
 public:
 
