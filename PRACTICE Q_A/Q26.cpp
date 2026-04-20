@@ -135,6 +135,8 @@ private:
     int jCount, cCount, tCount;
 
 public:
+    JobRoutine(string id, string n) {
+    }
 
 
 };
