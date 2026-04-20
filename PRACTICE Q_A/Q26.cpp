@@ -138,6 +138,7 @@ public:
     JobRoutine(string id, string n) {
         routineID = id;
         name      = n;
+        jCount = cCount = tCount = 0;
     }
 
 
