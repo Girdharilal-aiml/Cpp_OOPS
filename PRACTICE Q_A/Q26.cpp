@@ -127,6 +127,7 @@ public:
 
 class JobRoutine {
 private:
+    string routineID;
 
 public:
 
