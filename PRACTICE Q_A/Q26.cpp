@@ -188,5 +188,9 @@ int main() {
     Candidate c1("C1", "Ali");
     Candidate c2("C2", "Sara");
 
+    c1.applyJob(&j1);
+    c2.applyJob(&j2);
+
+    TrainingProgram t1("T1", "Deep Learning Basics");
 
 }
